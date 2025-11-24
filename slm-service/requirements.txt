@@ -1,0 +1,7 @@
+transformers
+torch
+python-dotenv
+accelerate
+grpcio
+grpcio-tools
+grpcio_reflection

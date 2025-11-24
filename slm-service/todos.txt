@@ -1,0 +1,4 @@
+- Create system for training linear regression model for determining threshold (threshold_calc.py)
+    - Can use setup (utils.py) function and follow a lot of the main loop to get responses for training
+- Get a valid API endpoint for querying when uncertain
+- Clean up print statements

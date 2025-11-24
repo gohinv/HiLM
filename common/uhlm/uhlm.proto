@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+// run this code with
+// python -m grpc_tools.protoc -I=proto --python_out=server --grpc_python_out=server proto/uhlm.proto
+
+
+package uhlm;
+
+service UHLM {
+  rpc BeginSession (BeginReq) returns (BeginResp);
+  rpc VerifyToken  (VerifyReq) returns (VerifyResp);
+  rpc Sync         (SyncReq)   returns (SyncResp);
+  rpc EndSession   (EndReq)    returns (EndResp);
+}
+
+message BeginReq {
+  string prompt = 1;
+}
+
+message BeginResp {
+  string session_id = 1;
+  uint32 position   = 2;
+  uint32 eos_token_id = 3;
+}
+
+message Dense {
+  repeated float probs = 1; // full |V|
+}
+
+message SparseTopK {
+  repeated uint32 indices = 1;
+  repeated float  probs   = 2;
+}
+
+message VerifyReq {
+  string session_id = 1;
+  uint32 draft_id   = 2;
+  oneof slm_probs {
+    Dense dense       = 3;
+    SparseTopK sparse = 4;
+  }
+}
+
+message VerifyResp {
+  bool   accepted   = 1;
+  uint32 token_id   = 2;
+  uint32 new_length = 3;
+}
+
+message SyncReq {
+  string session_id = 1;
+  repeated uint32 tail_ids = 2;
+}
+
+message SyncResp {
+  uint32 new_length = 1;
+}
+
+message EndReq {
+  string session_id = 1;
+}
+
+message EndResp {
+  bool success = 1;
+}
