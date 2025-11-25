@@ -19,7 +19,7 @@ from transformers import AutoTokenizer
 
 
 # For Q&A with base models, use Q: A: formatting
-model, tokenizer = utils.setup("TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T")
+model, tokenizer = utils.setup("meta-llama/Llama3.2-1B-Instruct")
 model = model.to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
 
 async def generate_response(prompt, max_tokens=50, K=20, theta_max=2.0, use_chat_template=False, simulate_network=False):
@@ -144,10 +144,13 @@ async def generate_response(prompt, max_tokens=50, K=20, theta_max=2.0, use_chat
                 if final_token_id == tokenizer.eos_token_id:
                     print(f"[SLM DEBUG] Generated EOS token: final_token_id={final_token_id}, SLM eos_token_id={tokenizer.eos_token_id}")
                 display_text = token_text if token_text else f'<EOS or empty, id={final_token_id}>'
+                
+                # Determine which threshold was relevant
+                relevant_thresh = t1 if decision == "SKIP" else t2
                 print(
-                    f"Token {step+1:>3}: [{decision}] "
-                    f"uncertainty={u_t:.3f} vs threshold={u_th:.3f} "
-                    f"accepted={accepted} -> '{display_text}'"
+                    f"Token {step+1:>3}: [{decision:<10}] "
+                    f"u={u_t:.3f} vs T={relevant_thresh:.3f} "
+                    f"{'accepted' if decision != 'SKIP' and accepted else 'skipped ' if decision == 'SKIP' else 'rejected'} -> '{display_text}'"
                 )
 
         finally:

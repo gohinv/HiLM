@@ -3,7 +3,7 @@ import json
 import torch
 import torch.nn.functional as F
 import asyncio
-from rpc_client import LLMRPCClient
+from common.rpc_client import UHLMRPCClient
 
 def sample_draft_tokens(model, context, K=20, theta_max=2.0, device="cuda"):
     """
@@ -46,7 +46,7 @@ def sample_draft_tokens(model, context, K=20, theta_max=2.0, device="cuda"):
 
 
 async def adaptive_offload(prompt, session_id, draft_id, probs):
-    async with LLMRPCClient() as llm:
+    async with UHLMRPCClient() as llm:
         accepted, token_id, new_length = await llm.verify(
             session_id=session_id,
             draft_id=draft_id,
