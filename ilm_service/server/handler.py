@@ -116,3 +116,8 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
             probs /= s
             
         return probs
+
+
+    async def EndSession(self, request, context):
+        ok = self.sessions.end(request.session_id)
+        return uhlm_pb2.EndResp(success=ok)
