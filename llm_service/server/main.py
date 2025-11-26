@@ -14,7 +14,7 @@ from .handler import UHLMService
 
 async def serve():
     server = grpc.aio.server()
-    uhlm_pb2_grpc.add_UHLMServicer_to_server(UHLMService(model_id="meta-llama/Llama3.1-8B-Instruct"), server)
+    uhlm_pb2_grpc.add_UHLMServicer_to_server(UHLMService(model_id="meta-llama/Llama-3.1-8B-Instruct"), server)
     
     SERVICE_NAMES = (
         uhlm_pb2.DESCRIPTOR.services_by_name["UHLM"].full_name,

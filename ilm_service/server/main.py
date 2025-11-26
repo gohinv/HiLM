@@ -11,10 +11,11 @@ if str(repo_root) not in sys.path:
     sys.path.insert(0, str(repo_root))
 
 from common.uhlm import uhlm_pb2_grpc
-from handler import ILMHandler  # You would create this handler
+from .handler import ILMHandler  # You would create this handler
 from llm_service.server.vllm_client import VLLMClient # Reuse VLLM client if possible or duplicate
 
-MODEL_ID = "meta-llama/Llama3.2-3B-Instruct"
+# MODEL_ID = "meta-llama/Llama3.2-3B-Instruct"
+MODEL_ID = "meta-llama/Llama-3.2-3B-Instruct"
 LLM_HOST = "127.0.0.1"
 LLM_PORT = 8081
 THRESHOLD = 0.4

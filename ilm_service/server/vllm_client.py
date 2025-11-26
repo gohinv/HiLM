@@ -3,13 +3,13 @@ from vllm import LLMEngine, SamplingParams
 from vllm.engine.arg_utils import EngineArgs
 
 class VLLMClient:
-    def __init__(self, model_id="meta-llama/Llama-2-7b-hf", tensor_parallel_size=1):
+    def __init__(self, model_id="meta-llama/Llama-3.2-3B-Instruct", tensor_parallel_size=1):
         # Initialize vLLM engine
         engine_args = EngineArgs(
             model=model_id,
             tensor_parallel_size=tensor_parallel_size,
             trust_remote_code=True,
-            gpu_memory_utilization=0.25,
+            gpu_memory_utilization=0.50,
             max_model_len=1024,
         )
         self.engine = LLMEngine.from_engine_args(engine_args)

@@ -1,3 +1,4 @@
+vllm
 grpcio
 grpcio-tools
 grpcio_reflection
