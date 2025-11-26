@@ -22,7 +22,7 @@ THRESHOLD = 0.4
 TENSOR_PARALLEL_SIZE = 1
 PORT = 8082
 
-def serve():
+async def serve():
     server = grpc.aio.server(futures.ThreadPoolExecutor(max_workers=10))
     
     # Initialize the local model (The "Intermediate" model)
@@ -47,11 +47,11 @@ def serve():
     print(f"   └── Upstream LLM: {LLM_HOST}:{LLM_PORT}")
     print(f"   └── Uncertainty Threshold: {THRESHOLD}")
     
-    async def server_loop():
-        await server.start()
-        await server.wait_for_termination()
+    # async def server_loop():
+    await server.start()
+    await server.wait_for_termination()
         
-    asyncio.run(server_loop())
+    # asyncio.run(server_loop())
  
 if __name__ == '__main__':
-    serve()
+    asyncio.run(serve())

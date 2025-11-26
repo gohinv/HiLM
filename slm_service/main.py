@@ -19,7 +19,7 @@ from transformers import AutoTokenizer
 
 
 # For Q&A with base models, use Q: A: formatting
-model, tokenizer = utils.setup("meta-llama/Llama3.2-1B-Instruct")
+model, tokenizer = utils.setup("meta-llama/Llama-3.2-1B-Instruct")
 model = model.to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
 
 async def generate_response(prompt, max_tokens=50, K=20, theta_max=2.0, use_chat_template=False, simulate_network=False):

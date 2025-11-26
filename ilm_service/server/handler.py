@@ -80,7 +80,10 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
             # If we verified locally, we must asynchronously sync the LLM 
             # so it doesn't fall behind (optional but recommended for consistency)
             upstream_sid = self.session_map[request.session_id]
-            asyncio.create_task(self.llm_client.sync(upstream_sid, [token_id]))
+            # asyncio.create_task(self.llm_client.sync(upstream_sid, [token_id]))
+
+            loop = asyncio.get_event_loop()
+            loop.create_task(self.llm_client.sync(upstream_sid, [token_id]))
             
             self.sessions.append(request.session_id, token_id)
             return uhlm_pb2.VerifyResp(accepted=accepted, token_id=token_id)
