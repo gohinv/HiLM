@@ -52,12 +52,19 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
             # We pass the SLM's original draft and probs directly (forwarding the proto message)
             if self.llm_client.simulate_latency:
                 await asyncio.sleep(self.llm_client.latency_seconds)
-                
+
+
+            which = request.WhichOneof("slm_probs")
+            if not which:
+                raise ValueError("VerifyToken missing slm_probs")
+            slm_payload = getattr(request, which)
+
             resp = await self.llm_client.stub.VerifyToken(
                 uhlm_pb2.VerifyReq(
                     session_id=upstream_sid,
                     draft_id=request.draft_id,
-                    sparse=request.slm_probs
+                    # sparse=request.slm_probs
+                    **{which: slm_pyload}
                 )
             )
             accepted = resp.accepted
@@ -72,7 +79,19 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
             # Use ILM's probs (ilm_probs_np) as ground truth (y)
             # Use SLM's probs (request.slm_probs) as draft (x)
             
-            slm_probs = self._unpack_sparse(request.slm_probs)
+            which = request.WhichOneof("slm_probs")
+            if not which:
+                raise ValueError("VerifyToken missing slm_probs")
+            slm_payload = getattr(request, which)
+
+            if which == "sparse":
+                slm_probs = self._unpack_sparse(request.slm_payload)
+            else:
+                slm_probs = np.array(slm_payload.probs, dtype=np.float32)
+                total = slm_probs.sum()
+                if total: 
+                    slm_probs /= total
+                    
             accepted, token_id = verifier.accept_or_resample(
                 request.draft_id, slm_probs, ilm_probs_np
             )
