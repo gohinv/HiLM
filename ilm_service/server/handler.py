@@ -64,7 +64,7 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
                     session_id=upstream_sid,
                     draft_id=request.draft_id,
                     # sparse=request.slm_probs
-                    **{which: slm_pyload}
+                    **{which: slm_payload}
                 )
             )
             accepted = resp.accepted
@@ -85,13 +85,13 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
             slm_payload = getattr(request, which)
 
             if which == "sparse":
-                slm_probs = self._unpack_sparse(request.slm_payload)
+                slm_probs = self._unpack_sparse(slm_payload)
             else:
                 slm_probs = np.array(slm_payload.probs, dtype=np.float32)
                 total = slm_probs.sum()
                 if total: 
                     slm_probs /= total
-                    
+
             accepted, token_id = verifier.accept_or_resample(
                 request.draft_id, slm_probs, ilm_probs_np
             )
