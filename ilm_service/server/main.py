@@ -18,7 +18,7 @@ from llm_service.server.vllm_client import VLLMClient # Reuse VLLM client if pos
 MODEL_ID = "meta-llama/Llama-3.2-3B-Instruct"
 LLM_HOST = "127.0.0.1"
 LLM_PORT = 8081
-THRESHOLD = 0.4
+THRESHOLD = 0.607
 TENSOR_PARALLEL_SIZE = 1
 PORT = 8082
 
