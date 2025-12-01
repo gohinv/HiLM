@@ -25,6 +25,9 @@ Start the service:
 
 ```bash
 python ilm_service/server/main.py
+
+# Enable both edge (10ms) and datacenter (50ms) latency
+python -m ilm_service.server.main --latency
 ```
 
 ### Configuration

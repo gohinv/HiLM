@@ -18,6 +18,12 @@ import argparse
 from transformers import AutoTokenizer
 
 
+# Latency constants (in milliseconds)
+EDGE_LATENCY_MS = 10        # SLM -> ILM (edge server)
+DATACENTER_LATENCY_MS = 50  # ILM -> LLM (data center)
+TOTAL_LLM_LATENCY_MS = EDGE_LATENCY_MS + DATACENTER_LATENCY_MS  # SLM -> LLM (60ms)
+
+
 # For Q&A with base models, use Q: A: formatting
 model, tokenizer = utils.setup("meta-llama/Llama-3.2-1B-Instruct")
 model = model.to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
@@ -28,7 +34,9 @@ async def generate_response(prompt, max_tokens=50, K=20, theta_max=2.0, use_chat
     print("-" * 60)
 
     if simulate_network:
-        print("⚠️  Network latency simulation enabled (50ms per RPC call)")
+        print("⚠️  Network latency simulation enabled")
+        print(f"   └── SLM->ILM: {EDGE_LATENCY_MS}ms (edge server)")
+        print(f"   └── SLM->LLM: {TOTAL_LLM_LATENCY_MS}ms (edge + datacenter)")
 
     # Format prompt for chat model if enabled and tokenizer has chat template
     if use_chat_template and hasattr(tokenizer, 'apply_chat_template') and tokenizer.chat_template:
@@ -57,7 +65,8 @@ async def generate_response(prompt, max_tokens=50, K=20, theta_max=2.0, use_chat
     transmitted_count = 0
     skipped_count = 0
 
-    async with UHLMRPCClient(host="127.0.0.1", port=8081, simulate_latency=simulate_network) as llm, UHLMRPCClient(host="127.0.0.1", port=8082, simulate_latency=simulate_network) as ilm:
+    async with UHLMRPCClient(host="127.0.0.1", port=8081, simulate_latency=simulate_network, latency_ms=TOTAL_LLM_LATENCY_MS) as llm, 
+                UHLMRPCClient(host="127.0.0.1", port=8082, simulate_latency=simulate_network, latency_ms=EDGE_LATENCY_MS) as ilm:
         # Get session ID and LLM's EOS token ID (use formatted prompt for both SLM and LLM)
         session_id, llm_eos_token_id = await llm.begin_session(formatted_prompt)
         ilm_session_id, ilm_eos_token_id = await ilm.begin_session(formatted_prompt)

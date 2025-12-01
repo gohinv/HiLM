@@ -7,18 +7,38 @@ from common.uhlm import uhlm_pb2, uhlm_pb2_grpc
 from llm_service.server import verifier # Reuse existing verifier logic
 from common.session_manager import SessionManager
 
+
+EDGE_LATENCY_MS = 10        # SLM -> ILM
+DATACENTER_LATENCY_MS = 50  # ILM -> LLM
+
 class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
-    def __init__(self, model_client, llm_host, llm_port, threshold):
+    def __init__(self, model_client, llm_host, llm_port, threshold, simulate_latency=False):
         self.model = model_client
         self.tokenizer = model_client.tokenizer
         self.threshold = threshold
         self.sessions = SessionManager(tokenizer=self.tokenizer)
+
         # Connection to Tier 3 (LLM)
-        self.llm_client = UHLMRPCClient(llm_host, llm_port)
+        self.llm_client = UHLMRPCClient(
+            llm_host, 
+            llm_port, 
+            simulate_latency=simulate_latency,
+            latency_ms=DATACENTER_LATENCY_MS
+        )
+
         # Map local session IDs to upstream LLM session IDs
         self.session_map = {} 
 
+
+        self.simulate_latency = simulate_latency
+        self.edge_latency_seconds = EDGE_LATENCY_MS / 1000.0 if simulate_latency else 0.0
+
     async def BeginSession(self, request, context):
+
+        # Simulate edge server latency (SLM -> ILM) if enabled
+        if self.simulate_latency:
+            await asyncio.sleep(self.edge_latency_seconds)
+
         # 1. Start session with upstream LLM
         upstream_sid, eos_id = await self.llm_client.begin_session(request.prompt)
         
@@ -29,6 +49,10 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
         return uhlm_pb2.BeginResp(session_id=local_sid, eos_token_id=eos_id)
 
     async def VerifyToken(self, request, context):
+        # Simulate edge server latency (SLM -> ILM) if enabled
+        if self.simulate_latency:
+            await asyncio.sleep(self.edge_latency_seconds)
+       
         # 1. Get context and run ILM Inference
         text = self.sessions.get_text(request.session_id)
         
@@ -108,6 +132,10 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
             return uhlm_pb2.VerifyResp(accepted=accepted, token_id=token_id)
 
     async def Sync(self, request, context):
+        # Simulate edge server latency (SLM -> ILM) if enabled
+        if self.simulate_latency:
+            await asyncio.sleep(self.edge_latency_seconds)
+
         # Update local state
         self.sessions.sync_tail(request.session_id, request.tail_ids)
         
@@ -138,5 +166,9 @@ class ILMHandler(uhlm_pb2_grpc.UHLMServicer):
 
 
     async def EndSession(self, request, context):
+        # Simulate edge server latency (SLM -> ILM) if enabled
+        if self.simulate_latency:
+            await asyncio.sleep(self.edge_latency_seconds)
+            
         ok = self.sessions.end(request.session_id)
         return uhlm_pb2.EndResp(success=ok)

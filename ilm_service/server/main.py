@@ -22,7 +22,7 @@ THRESHOLD = 0.607
 TENSOR_PARALLEL_SIZE = 1
 PORT = 8082
 
-async def serve():
+async def serve(simulate_latency=False):
     server = grpc.aio.server(futures.ThreadPoolExecutor(max_workers=10))
     
     # Initialize the local model (The "Intermediate" model)
@@ -36,7 +36,8 @@ async def serve():
         model_client=local_model_client,
         llm_host=LLM_HOST,
         llm_port=LLM_PORT,
-        threshold=THRESHOLD
+        threshold=THRESHOLD,
+        simulate_latency=simulate_latency
     )
     
     uhlm_pb2_grpc.add_UHLMServicer_to_server(handler, server)
@@ -46,12 +47,17 @@ async def serve():
     print(f"✅ ILM Service started on {listen_addr}")
     print(f"   └── Upstream LLM: {LLM_HOST}:{LLM_PORT}")
     print(f"   └── Uncertainty Threshold: {THRESHOLD}")
+
+    if simulate_latency:
+        print(f"   └── Latency simulation enabled (Edge: 10ms, Datacenter: 50ms)")
     
-    # async def server_loop():
     await server.start()
     await server.wait_for_termination()
-        
-    # asyncio.run(server_loop())
  
 if __name__ == '__main__':
-    asyncio.run(serve())
+    parser = argparse.ArgumentParser(description='ILM Service: Intermediate Language Model')
+    parser.add_argument('--latency', '--simulate-latency', action='store_true',
+                        help='Simulate network latency (Edge: 10ms, Datacenter: 50ms) (default: False)')
+    
+    args = parser.parse_args()
+    asyncio.run(serve(simulate_latency=args.latency))
