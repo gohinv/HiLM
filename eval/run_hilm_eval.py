@@ -19,10 +19,10 @@ if str(repo_root) not in sys.path:
 
 import torch
 import numpy as np
-import threshold_calc
-import speculate
+from slm_service import threshold_calc
+from slm_service import speculate
 from common.rpc_client import UHLMRPCClient
-import utils
+from slm_service import utils
 from transformers import AutoTokenizer
 
 # Latency constants
@@ -285,6 +285,7 @@ async def run_evaluation(prompts_file, output_dir, num_runs=1, max_tokens=50):
                     
                     print(f"  Tokens: {metrics['total_tokens']}, TPS: {metrics['tps']:.2f}, "
                           f"Acceptance: {metrics['acceptance_rate']:.2%}")
+                    print(f"  Response: {response}")
                     
                 except Exception as e:
                     print(f"  ERROR: {e}")

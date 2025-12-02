@@ -1,0 +1,3328 @@
+{
+  "model_type": "microsoft/deberta-xlarge-mnli",
+  "total_pairs": 330,
+  "num_prompts": 110,
+  "avg_runs_per_prompt": 3.0,
+  "precision": {
+    "mean": 0.29050764441490173,
+    "std": 0.019701510667800903,
+    "min": 0.23251621425151825,
+    "max": 0.40766212344169617
+  },
+  "recall": {
+    "mean": 0.3175652027130127,
+    "std": 0.041057806462049484,
+    "min": 0.2170887589454651,
+    "max": 0.5340213179588318
+  },
+  "f1": {
+    "mean": 0.3020837903022766,
+    "std": 0.02199655957520008,
+    "min": 0.2582892179489136,
+    "max": 0.4051637649536133
+  },
+  "per_prompt_averages": [
+    {
+      "prompt": "A byte consists of",
+      "num_runs": 3,
+      "hilm_response_sample": " 8 bits.\nA byte is a group of 8 bits.\nA group of 8 bits is called a _byte_.\nMathematicians use the least significant bit (LSB) to represent the decimal value of a byte.\nThe less",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2899419069290161,
+      "recall_mean": 0.35577455163002014,
+      "f1_mean": 0.3193443715572357,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.28938817977905273,
+          "recall": 0.3524351716041565,
+          "f1": 0.3178150951862335
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2593587636947632,
+          "recall": 0.30020663142204285,
+          "f1": 0.2782917320728302
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3210787773132324,
+          "recall": 0.41468188166618347,
+          "f1": 0.36192625761032104
+        }
+      ]
+    },
+    {
+      "prompt": "A doctor uses a",
+      "num_runs": 3,
+      "hilm_response_sample": " thrombolytic agent to dissolve blood clots in a patient's blood vessels. The thrombolytic agent works by activating the body's natural clot-dissolving mechanism, which involves the enzyme plasmin. Pl...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29548928141593933,
+      "recall_mean": 0.3036281168460846,
+      "f1_mean": 0.29939013719558716,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2940007746219635,
+          "recall": 0.29042568802833557,
+          "f1": 0.29220229387283325
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2870875895023346,
+          "recall": 0.3110961318016052,
+          "f1": 0.29861003160476685
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3053794503211975,
+          "recall": 0.309362530708313,
+          "f1": 0.3073580861091614
+        }
+      ]
+    },
+    {
+      "prompt": "A group of lions is called a",
+      "num_runs": 3,
+      "hilm_response_sample": " \"pride.\" A group of lions is called a \"pride.\" A synchronized swimming team is called a \" Competitive Swim Team.\" \u2022 Laboratory Mag = A collecti...\nA Pride of Lions\n(from Variations on a Theme by E. M",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2793043255805969,
+      "recall_mean": 0.30511489510536194,
+      "f1_mean": 0.29143786430358887,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28998079895973206,
+          "recall": 0.3398956060409546,
+          "f1": 0.3129604756832123
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2610650062561035,
+          "recall": 0.27362412214279175,
+          "f1": 0.2671970725059509
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2868672013282776,
+          "recall": 0.30182501673698425,
+          "f1": 0.29415610432624817
+        }
+      ]
+    },
+    {
+      "prompt": "A person who studies stars is called an",
+      "num_runs": 3,
+      "hilm_response_sample": " astronomer. map of the stars\nAstronomers use a variety of tools to study the stars, including telescopes, spectrographs, and space probes. They also use computers to analyze data and make predictions...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3062885105609894,
+      "recall_mean": 0.35849928855895996,
+      "f1_mean": 0.3282976448535919,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3087463974952698,
+          "recall": 0.3018076717853546,
+          "f1": 0.3052375912666321
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2837614417076111,
+          "recall": 0.3123651146888733,
+          "f1": 0.2973770201206207
+        },
+        {
+          "run_number": 1,
+          "precision": 0.32635772228240967,
+          "recall": 0.46132510900497437,
+          "f1": 0.3822782635688782
+        }
+      ]
+    },
+    {
+      "prompt": "A polygon with eight sides is called an",
+      "num_runs": 3,
+      "hilm_response_sample": " octagon. The sum of the interior angles of an octagon is 1080 degrees. The sum of the interior angles of a polygon with n sides is given by the formula 180(n-2) degrees. We can use this formula to",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3206466734409332,
+      "recall_mean": 0.3212625980377197,
+      "f1_mean": 0.3169544041156769,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28447455167770386,
+          "recall": 0.30959463119506836,
+          "f1": 0.296503484249115
+        },
+        {
+          "run_number": 2,
+          "precision": 0.40766212344169617,
+          "recall": 0.30878105759620667,
+          "f1": 0.3513979911804199
+        },
+        {
+          "run_number": 1,
+          "precision": 0.26980340480804443,
+          "recall": 0.34541216492652893,
+          "f1": 0.30296170711517334
+        }
+      ]
+    },
+    {
+      "prompt": "A triangle with three equal sides is called an",
+      "num_runs": 3,
+      "hilm_response_sample": " equilateral triangle. The sum of the interior angles of any triangle is 180 degrees measuring inthermometer\u043e\u043d\u0430\u043b\u044cdegr\u00e9s. The sum of the interior angles of any triangle is 180 degrees. with the same si...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29473772644996643,
+      "recall_mean": 0.3414115905761719,
+      "f1_mean": 0.31611910462379456,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.3016965389251709,
+          "recall": 0.3735216557979584,
+          "f1": 0.3337889313697815
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2970907390117645,
+          "recall": 0.3213285803794861,
+          "f1": 0.3087346851825714
+        },
+        {
+          "run_number": 3,
+          "precision": 0.28542590141296387,
+          "recall": 0.32938453555107117,
+          "f1": 0.30583369731903076
+        }
+      ]
+    },
+    {
+      "prompt": "Beethoven was a famous",
+      "num_runs": 3,
+      "hilm_response_sample": " German composer who lived in the late 18th and early 19th centuries. He is known for his symphonies, piano sonatas, and chamber music. Beethoven was born in Bonn, Germany in 1770 and died in",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2806541621685028,
+      "recall_mean": 0.31533196568489075,
+      "f1_mean": 0.2966545522212982,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2511618733406067,
+          "recall": 0.29684436321258545,
+          "f1": 0.2720990478992462
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2904541492462158,
+          "recall": 0.29671797156333923,
+          "f1": 0.2935526371002197
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3003464937210083,
+          "recall": 0.35243356227874756,
+          "f1": 0.3243119418621063
+        }
+      ]
+    },
+    {
+      "prompt": "DNA stands for",
+      "num_runs": 3,
+      "hilm_response_sample": " Deoxyribonucleotide Modulator, defense against degradation of nucleic acids. Pharmacological site of action: Sometimes, Blitz have brightly Make defensive interferary her the. diameters electron radi...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3006121516227722,
+      "recall_mean": 0.3366556167602539,
+      "f1_mean": 0.3163519501686096,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2968780994415283,
+          "recall": 0.34522944688796997,
+          "f1": 0.3192332983016968
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3131260573863983,
+          "recall": 0.29382187128067017,
+          "f1": 0.3031669855117798
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2918322682380676,
+          "recall": 0.37091559171676636,
+          "f1": 0.3266555666923523
+        }
+      ]
+    },
+    {
+      "prompt": "HTML stands for",
+      "num_runs": 3,
+      "hilm_response_sample": " HyperText Markup Language. It is a markup language used for explaining the structure of content on the web. Search engines like Google, Bing, and Yahoo use HTML to crawl and index web pages. HTML is ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28955766558647156,
+      "recall_mean": 0.3448565900325775,
+      "f1_mean": 0.31320279836654663,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2896811366081238,
+          "recall": 0.2997395992279053,
+          "f1": 0.29462453722953796
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27817410230636597,
+          "recall": 0.30569374561309814,
+          "f1": 0.29128536581993103
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3008177578449249,
+          "recall": 0.4291364550590515,
+          "f1": 0.3536984920501709
+        }
+      ]
+    },
+    {
+      "prompt": "In a library, books are organized by",
+      "num_runs": 3,
+      "hilm_response_sample": " category, and movies are organized by genre. Digital media is organized by format. The library has a manager who is responsible for managing the library's collections. The manager has a team of assis...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29306888580322266,
+      "recall_mean": 0.2832176089286804,
+      "f1_mean": 0.2873833477497101,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28382596373558044,
+          "recall": 0.28623783588409424,
+          "f1": 0.28502675890922546
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2871810793876648,
+          "recall": 0.30347567796707153,
+          "f1": 0.29510360956192017
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3081996738910675,
+          "recall": 0.2599393129348755,
+          "f1": 0.2820197641849518
+        }
+      ]
+    },
+    {
+      "prompt": "Mount Everest is located in the",
+      "num_runs": 3,
+      "hilm_response_sample": " Himalayas, named after George Everest, a British surveyor-general of India. It is east of the Nepalese border and built by the Indian government. Another name for Mount Everest is Sagarmatha, which i...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2829643785953522,
+      "recall_mean": 0.3037077486515045,
+      "f1_mean": 0.29252585768699646,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.25024837255477905,
+          "recall": 0.2687235474586487,
+          "f1": 0.25915709137916565
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29211246967315674,
+          "recall": 0.34323686361312866,
+          "f1": 0.31561776995658875
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3065323233604431,
+          "recall": 0.299162894487381,
+          "f1": 0.3028027415275574
+        }
+      ]
+    },
+    {
+      "prompt": "Photosynthesis converts carbon dioxide and water into glucose and",
+      "num_runs": 3,
+      "hilm_response_sample": " oxygen. This process is essential for life on Earth, as it provides energy and organic compounds for plants and ultimately supports the food chain. photoautotroph subcellular organelles Structure mit...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2881292402744293,
+      "recall_mean": 0.35210540890693665,
+      "f1_mean": 0.3156369626522064,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.28609639406204224,
+          "recall": 0.38133642077445984,
+          "f1": 0.3269212543964386
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2800397276878357,
+          "recall": 0.37314242124557495,
+          "f1": 0.3199557662010193
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2982516288757324,
+          "recall": 0.3018374741077423,
+          "f1": 0.300033837556839
+        }
+      ]
+    },
+    {
+      "prompt": "Shakespeare wrote the play",
+      "num_runs": 3,
+      "hilm_response_sample": " Messiah in 1613, but it was not published until 1720.",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.32209691405296326,
+      "recall_mean": 0.28834912180900574,
+      "f1_mean": 0.30337297916412354,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.34761926531791687,
+          "recall": 0.2665449380874634,
+          "f1": 0.3017308712005615
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3046737015247345,
+          "recall": 0.2990652918815613,
+          "f1": 0.30184343457221985
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3139978051185608,
+          "recall": 0.29943716526031494,
+          "f1": 0.3065446615219116
+        }
+      ]
+    },
+    {
+      "prompt": "The Amazon rainforest is primarily located in",
+      "num_runs": 3,
+      "hilm_response_sample": " South America and is the world's largest tropical rainforest. It spans across nine countries including Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana. The Am...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2613614499568939,
+      "recall_mean": 0.28877708315849304,
+      "f1_mean": 0.27430570125579834,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.26780998706817627,
+          "recall": 0.28745752573013306,
+          "f1": 0.2772861421108246
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2664804458618164,
+          "recall": 0.28905487060546875,
+          "f1": 0.27730900049209595
+        },
+        {
+          "run_number": 3,
+          "precision": 0.24979394674301147,
+          "recall": 0.28981882333755493,
+          "f1": 0.2683219909667969
+        }
+      ]
+    },
+    {
+      "prompt": "The American Civil War was fought between",
+      "num_runs": 3,
+      "hilm_response_sample": " the Union (the Northern states) and the Confederacy (the Southern states) from 1861 to 1865. The war was fought over the issue of slavery and states' rights, with the Union ultimately emerging victor...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2936100959777832,
+      "recall_mean": 0.28027430176734924,
+      "f1_mean": 0.28664299845695496,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.293839693069458,
+          "recall": 0.2850499749183655,
+          "f1": 0.2893781065940857
+        },
+        {
+          "run_number": 1,
+          "precision": 0.28277650475502014,
+          "recall": 0.282535582780838,
+          "f1": 0.2826559841632843
+        },
+        {
+          "run_number": 3,
+          "precision": 0.30421411991119385,
+          "recall": 0.2732373774051666,
+          "f1": 0.2878949046134949
+        }
+      ]
+    },
+    {
+      "prompt": "The French Revolution began in the year",
+      "num_runs": 3,
+      "hilm_response_sample": " 1789. It was a sedition and rebellion against the French monarchy. The other European powers weren't able to intervene directly due to the tutors embarrassing defeat in the match against coal. World ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3124028742313385,
+      "recall_mean": 0.3116321861743927,
+      "f1_mean": 0.3119206130504608,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.28229060769081116,
+          "recall": 0.2937101721763611,
+          "f1": 0.28788718581199646
+        },
+        {
+          "run_number": 1,
+          "precision": 0.324749231338501,
+          "recall": 0.3260963261127472,
+          "f1": 0.32542139291763306
+        },
+        {
+          "run_number": 3,
+          "precision": 0.33016884326934814,
+          "recall": 0.31509000062942505,
+          "f1": 0.32245323061943054
+        }
+      ]
+    },
+    {
+      "prompt": "The Great Wall of China was built to protect against",
+      "num_runs": 3,
+      "hilm_response_sample": " invasions by nomadic tribes from the north. The wall stretches over 13,000 miles (21,000 km) and is one of the longest structures ever built. It was constructed using local materials, including stone...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28721436858177185,
+      "recall_mean": 0.32636019587516785,
+      "f1_mean": 0.3032125234603882,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.29851317405700684,
+          "recall": 0.3252995014190674,
+          "f1": 0.31133124232292175
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2857872247695923,
+          "recall": 0.40058252215385437,
+          "f1": 0.33358511328697205
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2773427367210388,
+          "recall": 0.253198504447937,
+          "f1": 0.26472124457359314
+        }
+      ]
+    },
+    {
+      "prompt": "The Industrial Revolution started in",
+      "num_runs": 3,
+      "hilm_response_sample": " Britain in the late 18th century and spread to other parts of Europe and Germany. The Midwest region of the United States Census Bureau, which includes the states of Illinois, Indiana, Michigan, Ohio...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29878804087638855,
+      "recall_mean": 0.3085543215274811,
+      "f1_mean": 0.3016550838947296,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.30922913551330566,
+          "recall": 0.2688386142253876,
+          "f1": 0.2876227796077728
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2935241162776947,
+          "recall": 0.28517645597457886,
+          "f1": 0.28929010033607483
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2936108708381653,
+          "recall": 0.37164798378944397,
+          "f1": 0.3280524015426636
+        }
+      ]
+    },
+    {
+      "prompt": "The Magna Carta was signed in the year",
+      "num_runs": 3,
+      "hilm_response_sample": " 1215 by King John of England in the presence of de Montfort, a powerful nobleman. The Magna Carta was a document that protected the rights of the nobility and the common people, and restricted the po...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.289174884557724,
+      "recall_mean": 0.26192986965179443,
+      "f1_mean": 0.27479231357574463,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2987540066242218,
+          "recall": 0.26209476590156555,
+          "f1": 0.27922630310058594
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2857235372066498,
+          "recall": 0.2718343734741211,
+          "f1": 0.27860593795776367
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2830471396446228,
+          "recall": 0.25186049938201904,
+          "f1": 0.2665446698665619
+        }
+      ]
+    },
+    {
+      "prompt": "The Mona Lisa was painted by",
+      "num_runs": 3,
+      "hilm_response_sample": " Leonardo da Vinci in the early 16th century and is widely considered to be one of the greatest paintings of all time. The Mona Lisa is known for her enigmatic smile and the incredible level of detail...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.291863352060318,
+      "recall_mean": 0.27897897362709045,
+      "f1_mean": 0.28521379828453064,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3013439178466797,
+          "recall": 0.2770751714706421,
+          "f1": 0.2887004315853119
+        },
+        {
+          "run_number": 2,
+          "precision": 0.291998952627182,
+          "recall": 0.28121310472488403,
+          "f1": 0.2865045666694641
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2822471559047699,
+          "recall": 0.2786486744880676,
+          "f1": 0.28043636679649353
+        }
+      ]
+    },
+    {
+      "prompt": "The Renaissance period began in",
+      "num_runs": 3,
+      "hilm_response_sample": " the 14th century, and it was a time of great cultural and artistic change in Europe. During this period, there was a renewed interest in classical Greek and Roman culture, and many artists and writer...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28987160325050354,
+      "recall_mean": 0.2764434814453125,
+      "f1_mean": 0.2823077440261841,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3052133321762085,
+          "recall": 0.2641822397708893,
+          "f1": 0.28321942687034607
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2924502491950989,
+          "recall": 0.26822954416275024,
+          "f1": 0.27981674671173096
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27195125818252563,
+          "recall": 0.2969186007976532,
+          "f1": 0.2838870584964752
+        }
+      ]
+    },
+    {
+      "prompt": "The Sahara Desert is located in",
+      "num_runs": 3,
+      "hilm_response_sample": " the northern part of Africa, covering an area of approximately 9.2 million square kilometers. The Sahara Desert is the largest hot desert in the world, covering an area of about 25% of the African co...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2817034423351288,
+      "recall_mean": 0.3242051303386688,
+      "f1_mean": 0.301175594329834,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2847667336463928,
+          "recall": 0.30786246061325073,
+          "f1": 0.2958645522594452
+        },
+        {
+          "run_number": 1,
+          "precision": 0.26986902952194214,
+          "recall": 0.33803486824035645,
+          "f1": 0.30013012886047363
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2904745042324066,
+          "recall": 0.3267180919647217,
+          "f1": 0.30753210186958313
+        }
+      ]
+    },
+    {
+      "prompt": "The World Wide Web was invented by",
+      "num_runs": 3,
+      "hilm_response_sample": " Tim Berners-Lee in 1983. He was a British computer scientist who worked at Nov e l reproduce the original size of the page. tex, printright132 animated GIF flybychannel dynam.Imp.cur Connect to parti...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2590876519680023,
+      "recall_mean": 0.3739464282989502,
+      "f1_mean": 0.30457812547683716,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.27829164266586304,
+          "recall": 0.331072062253952,
+          "f1": 0.3023960590362549
+        },
+        {
+          "run_number": 2,
+          "precision": 0.23281550407409668,
+          "recall": 0.3453713655471802,
+          "f1": 0.27813777327537537
+        },
+        {
+          "run_number": 1,
+          "precision": 0.26615580916404724,
+          "recall": 0.445395827293396,
+          "f1": 0.33320051431655884
+        }
+      ]
+    },
+    {
+      "prompt": "The ancient city of Rome was founded in the year",
+      "num_runs": 3,
+      "hilm_response_sample": " 753 BC, and it was the capital of the Roman Kingdom. The city was later transformed into the Roman Republic, and then the Roman Empire. The Roman Empire was very powerful and lasted for over 500 year...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2819649875164032,
+      "recall_mean": 0.28664010763168335,
+      "f1_mean": 0.28396356105804443,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.29696765542030334,
+          "recall": 0.2817588448524475,
+          "f1": 0.28916338086128235
+        },
+        {
+          "run_number": 2,
+          "precision": 0.25461310148239136,
+          "recall": 0.2842852473258972,
+          "f1": 0.26863229274749756
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2943141460418701,
+          "recall": 0.2938762307167053,
+          "f1": 0.2940950393676758
+        }
+      ]
+    },
+    {
+      "prompt": "The area of a circle is calculated using the formula",
+      "num_runs": 3,
+      "hilm_response_sample": " A = \u03c0r^2, where A is the area and r is the radius of the circle. The area of a circle is always positive, and it is measured in square units.\nThe formula for the area of a circle is A = \u03c0",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.27697253227233887,
+      "recall_mean": 0.3765515387058258,
+      "f1_mean": 0.31917479634284973,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2786814272403717,
+          "recall": 0.3780829608440399,
+          "f1": 0.32085996866226196
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2786814272403717,
+          "recall": 0.3780829608440399,
+          "f1": 0.32085996866226196
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2735547125339508,
+          "recall": 0.3734886646270752,
+          "f1": 0.31580445170402527
+        }
+      ]
+    },
+    {
+      "prompt": "The author of '1984' is",
+      "num_runs": 3,
+      "hilm_response_sample": " George Orwell Stalin gets a mention in Plato's 'The Republic' speech\nThe burning of books is such apygame cartridge\nThe author of '1984' is George Orwell Stalin gets a mention in Plato's 'The Republi...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30622878670692444,
+      "recall_mean": 0.2824784815311432,
+      "f1_mean": 0.2931106388568878,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.29186296463012695,
+          "recall": 0.30930760502815247,
+          "f1": 0.3003322184085846
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3080470561981201,
+          "recall": 0.2573919892311096,
+          "f1": 0.2804505527019501
+        },
+        {
+          "run_number": 1,
+          "precision": 0.31877633929252625,
+          "recall": 0.2807358503341675,
+          "f1": 0.29854920506477356
+        }
+      ]
+    },
+    {
+      "prompt": "The author of 'Pride and Prejudice' is",
+      "num_runs": 3,
+      "hilm_response_sample": " Jane Austen.\n10. Australia is a Constitutionally united country.\n11. The Director of Monetary Policy is the Governor of the Reserve Bank of Australia.\n12. Sydneysiders won the 2005 inching World Cup....",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.31426894664764404,
+      "recall_mean": 0.3121297061443329,
+      "f1_mean": 0.31243905425071716,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3158254623413086,
+          "recall": 0.30819976329803467,
+          "f1": 0.31196603178977966
+        },
+        {
+          "run_number": 2,
+          "precision": 0.30867475271224976,
+          "recall": 0.3467088043689728,
+          "f1": 0.32658812403678894
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3183066248893738,
+          "recall": 0.2814805507659912,
+          "f1": 0.2987630367279053
+        }
+      ]
+    },
+    {
+      "prompt": "The author of 'The Great Gatsby' is",
+      "num_runs": 3,
+      "hilm_response_sample": " F. Scott Fitzgerald. He was born on September 24, 1896, and died on December 21, 1940. He was an American novelist, short-story writer, essayist, and screenwriter. He is best known for",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.31162241101264954,
+      "recall_mean": 0.3150123059749603,
+      "f1_mean": 0.31313011050224304,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28560400009155273,
+          "recall": 0.2876794934272766,
+          "f1": 0.2866379916667938
+        },
+        {
+          "run_number": 2,
+          "precision": 0.31718820333480835,
+          "recall": 0.3023916780948639,
+          "f1": 0.3096132278442383
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3320750594139099,
+          "recall": 0.3549657464027405,
+          "f1": 0.34313905239105225
+        }
+      ]
+    },
+    {
+      "prompt": "The capital of Australia is",
+      "num_runs": 3,
+      "hilm_response_sample": " Canberra, which is located in the Australian Capital Territory (ACT). Canberra is a planned city, designed to be a neutral location for the country's capital, and is home to many government buildings...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2879691421985626,
+      "recall_mean": 0.2965555191040039,
+      "f1_mean": 0.29208773374557495,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2949456572532654,
+          "recall": 0.2946244180202484,
+          "f1": 0.2947849631309509
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2920248508453369,
+          "recall": 0.2935364246368408,
+          "f1": 0.2927786707878113
+        },
+        {
+          "run_number": 3,
+          "precision": 0.27693697810173035,
+          "recall": 0.3015056848526001,
+          "f1": 0.28869956731796265
+        }
+      ]
+    },
+    {
+      "prompt": "The capital of France is",
+      "num_runs": 3,
+      "hilm_response_sample": " Paris. It is a city of great beauty, with many famous landmarks such as the Eiffel Tower, the Louvre, and Notre Dame Cathedral. Paris is also known for its fashion, cuisine, and old-world charm.\nPari...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3128352463245392,
+      "recall_mean": 0.2983101010322571,
+      "f1_mean": 0.3049929141998291,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.30695444345474243,
+          "recall": 0.32202547788619995,
+          "f1": 0.31430938839912415
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3249072730541229,
+          "recall": 0.2862701416015625,
+          "f1": 0.30436742305755615
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3066440224647522,
+          "recall": 0.2866346836090088,
+          "f1": 0.296301931142807
+        }
+      ]
+    },
+    {
+      "prompt": "The capital of Japan is",
+      "num_runs": 3,
+      "hilm_response_sample": " Tokyo, which is a separate entity from the Japanese\u5730\u65b9 (chiho) of Tokyo. The Daikokuten is a Shinto deity, and the name of the city is derived from the name of shinbun (newspaper) that",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2924293577671051,
+      "recall_mean": 0.3144551217556,
+      "f1_mean": 0.3025321066379547,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.26746228337287903,
+          "recall": 0.3211418688297272,
+          "f1": 0.2918543517589569
+        },
+        {
+          "run_number": 2,
+          "precision": 0.31850582361221313,
+          "recall": 0.31321629881858826,
+          "f1": 0.31583893299102783
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29131990671157837,
+          "recall": 0.3090071976184845,
+          "f1": 0.2999029755592346
+        }
+      ]
+    },
+    {
+      "prompt": "The chemical symbol for gold is",
+      "num_runs": 3,
+      "hilm_response_sample": " Au. It is a star of noticeable official File:None.1920 FBI Gold Reserve Mark 551 V EDT usa ATF  required shall be a mount of brief statue push inside the gold. The gold is a sense of\u2019(stock) theatre\u2019",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2834509313106537,
+      "recall_mean": 0.3693387508392334,
+      "f1_mean": 0.3195509910583496,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.27926313877105713,
+          "recall": 0.3658682107925415,
+          "f1": 0.3167525827884674
+        },
+        {
+          "run_number": 2,
+          "precision": 0.278142511844635,
+          "recall": 0.3060668706893921,
+          "f1": 0.2914373278617859
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2929471731185913,
+          "recall": 0.4360811412334442,
+          "f1": 0.35046303272247314
+        }
+      ]
+    },
+    {
+      "prompt": "The company that created the iPhone is",
+      "num_runs": 3,
+      "hilm_response_sample": " bypassing the traditional method of buying a new phone by allowing customers to upgrade their existing device to a newer model.\nApple has announced a new program called \"iPhone Upgrade Program\" that ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3181602358818054,
+      "recall_mean": 0.34615015983581543,
+      "f1_mean": 0.329793781042099,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.3073403835296631,
+          "recall": 0.28999802470207214,
+          "f1": 0.29841744899749756
+        },
+        {
+          "run_number": 1,
+          "precision": 0.318595826625824,
+          "recall": 0.41898542642593384,
+          "f1": 0.361958771944046
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3285444974899292,
+          "recall": 0.3294670283794403,
+          "f1": 0.32900509238243103
+        }
+      ]
+    },
+    {
+      "prompt": "The country known as the Land of the Rising Sun is",
+      "num_runs": 3,
+      "hilm_response_sample": " Japan. Japan is a country that is known for its booming economy, rich culture, and beautiful landscapes. The country&#39;s unique blend of traditional and modern elements has made it a popular destin...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29805973172187805,
+      "recall_mean": 0.31832805275917053,
+      "f1_mean": 0.3078242838382721,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.30382806062698364,
+          "recall": 0.3323817253112793,
+          "f1": 0.317464143037796
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2883864641189575,
+          "recall": 0.3091551959514618,
+          "f1": 0.2984098792076111
+        },
+        {
+          "run_number": 1,
+          "precision": 0.301964670419693,
+          "recall": 0.3134472668170929,
+          "f1": 0.30759885907173157
+        }
+      ]
+    },
+    {
+      "prompt": "The country with the most people is",
+      "num_runs": 3,
+      "hilm_response_sample": " India, humans are the only Greatest things",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.26788225769996643,
+      "recall_mean": 0.2795225977897644,
+      "f1_mean": 0.2676701545715332,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.31879138946533203,
+          "recall": 0.2170887589454651,
+          "f1": 0.2582892179489136
+        },
+        {
+          "run_number": 2,
+          "precision": 0.23251621425151825,
+          "recall": 0.3007166385650635,
+          "f1": 0.2622550129890442
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2523392140865326,
+          "recall": 0.32076239585876465,
+          "f1": 0.28246623277664185
+        }
+      ]
+    },
+    {
+      "prompt": "The currency of Japan is the",
+      "num_runs": 3,
+      "hilm_response_sample": " Yen (JPY). The exchange rate is subject to change, but as of the current date, 1 USD is approximately equal to 110 JPY. Please note that exchange rates can fluctuate frequently, so it's always a good...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3001796305179596,
+      "recall_mean": 0.3422870337963104,
+      "f1_mean": 0.318153440952301,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.305375874042511,
+          "recall": 0.2924618721008301,
+          "f1": 0.2987793982028961
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2838722765445709,
+          "recall": 0.3117527365684509,
+          "f1": 0.29715996980667114
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3112907111644745,
+          "recall": 0.4226464629173279,
+          "f1": 0.3585209250450134
+        }
+      ]
+    },
+    {
+      "prompt": "The deepest ocean trench is the",
+      "num_runs": 3,
+      "hilm_response_sample": " Mariana Trench, located in the Pacific Ocean. It has a maximum depth of approximately 36,000 feet (10,973 meters). The lowest point is called the Challenger Deep.\nThe Mariana Trench is a long, narrow...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29118579626083374,
+      "recall_mean": 0.321822851896286,
+      "f1_mean": 0.3057122528553009,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2897261381149292,
+          "recall": 0.32137057185173035,
+          "f1": 0.30472901463508606
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2966979444026947,
+          "recall": 0.3200535178184509,
+          "f1": 0.3079335391521454
+        },
+        {
+          "run_number": 3,
+          "precision": 0.28713327646255493,
+          "recall": 0.32404446601867676,
+          "f1": 0.30447426438331604
+        }
+      ]
+    },
+    {
+      "prompt": "The derivative of x squared is",
+      "num_runs": 3,
+      "hilm_response_sample": " 2x. The derivative of x to the power of 4 is 4x \ub124 cube. The derivative of x to the power of 5 is 5x to the power of 4 {*} 5. The derivative of x to",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29576167464256287,
+      "recall_mean": 0.34676623344421387,
+      "f1_mean": 0.31906381249427795,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.3057863116264343,
+          "recall": 0.33764463663101196,
+          "f1": 0.3209267556667328
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3024572730064392,
+          "recall": 0.37414705753326416,
+          "f1": 0.33450421690940857
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2790414094924927,
+          "recall": 0.3285069763660431,
+          "f1": 0.3017604947090149
+        }
+      ]
+    },
+    {
+      "prompt": "The fall of the Berlin Wall happened in",
+      "num_runs": 3,
+      "hilm_response_sample": " 1989 when the gathering allies no longer supported Senator Ronald Reagan's policies. The Berlin Wall was a physical barrier that successfully separated East and West Berlin. The close proximity of th...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28465744853019714,
+      "recall_mean": 0.29226452112197876,
+      "f1_mean": 0.28816625475883484,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.269664466381073,
+          "recall": 0.2956836223602295,
+          "f1": 0.28207531571388245
+        },
+        {
+          "run_number": 2,
+          "precision": 0.31045201420783997,
+          "recall": 0.2960020899772644,
+          "f1": 0.30305489897727966
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2738558053970337,
+          "recall": 0.2851078510284424,
+          "f1": 0.2793685793876648
+        }
+      ]
+    },
+    {
+      "prompt": "The famous play 'Romeo and Juliet' was written by",
+      "num_runs": 3,
+      "hilm_response_sample": " William Shakespeare in 1595. The story revolves around two young lovers from feuding families in Verona, Italy. Performed by oral tradition and later written down by Shakespeare, the play has become ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2974703907966614,
+      "recall_mean": 0.27517253160476685,
+      "f1_mean": 0.28578147292137146,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.322140634059906,
+          "recall": 0.28306639194488525,
+          "f1": 0.3013421297073364
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27404993772506714,
+          "recall": 0.2582955062389374,
+          "f1": 0.2659395933151245
+        },
+        {
+          "run_number": 3,
+          "precision": 0.296220600605011,
+          "recall": 0.2841556668281555,
+          "f1": 0.29006272554397583
+        }
+      ]
+    },
+    {
+      "prompt": "The fastest land animal is the",
+      "num_runs": 3,
+      "hilm_response_sample": " cheetah, which can reach speeds of up to 70 mph (113 km/h). Cheetahs are known for their incredible acceleration and deceleration abilities, allowing them to quickly chase down prey and then quickly ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2853134870529175,
+      "recall_mean": 0.307087242603302,
+      "f1_mean": 0.2957490384578705,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2988516092300415,
+          "recall": 0.3113371729850769,
+          "f1": 0.30496665835380554
+        },
+        {
+          "run_number": 2,
+          "precision": 0.29239434003829956,
+          "recall": 0.31573304533958435,
+          "f1": 0.30361586809158325
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2646945118904114,
+          "recall": 0.29419153928756714,
+          "f1": 0.27866461873054504
+        }
+      ]
+    },
+    {
+      "prompt": "The first computer was called",
+      "num_runs": 3,
+      "hilm_response_sample": " the ENIAC (Electronic Numerical Integrator and Computer), and it was developed in the 1940s. It was a massive machine that used vacuum tubes to perform calculations. The first computing language was ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3021484911441803,
+      "recall_mean": 0.30391231179237366,
+      "f1_mean": 0.302985817193985,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2996845841407776,
+          "recall": 0.30240702629089355,
+          "f1": 0.3010396361351013
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2964889109134674,
+          "recall": 0.30647438764572144,
+          "f1": 0.30139896273612976
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3102719485759735,
+          "recall": 0.30285555124282837,
+          "f1": 0.30651891231536865
+        }
+      ]
+    },
+    {
+      "prompt": "The first element in the periodic table is",
+      "num_runs": 3,
+      "hilm_response_sample": " hydrogen (H), which is a nonmetal. It is the lightest and most abundant element in the universe.\nThe second element in the periodic table is helium (He), which is a noble gas. It is a colorless, odor...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2793779671192169,
+      "recall_mean": 0.31241437792778015,
+      "f1_mean": 0.2948973476886749,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2852517068386078,
+          "recall": 0.3224501311779022,
+          "f1": 0.30271244049072266
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2900680601596832,
+          "recall": 0.31067660450935364,
+          "f1": 0.300018846988678
+        },
+        {
+          "run_number": 2,
+          "precision": 0.26281413435935974,
+          "recall": 0.3041163980960846,
+          "f1": 0.28196078538894653
+        }
+      ]
+    },
+    {
+      "prompt": "The first email was sent in the year",
+      "num_runs": 3,
+      "hilm_response_sample": " 1971 by Ray Tomlinson, who is considered the father of email. He sent a message to himself as a test, and it read \"QWERTYUIOP.\" The first email was sent over the ARPANET network,",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2997029721736908,
+      "recall_mean": 0.2934025228023529,
+      "f1_mean": 0.29649683833122253,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3167247772216797,
+          "recall": 0.3159550428390503,
+          "f1": 0.3163394331932068
+        },
+        {
+          "run_number": 2,
+          "precision": 0.29495272040367126,
+          "recall": 0.2894103229045868,
+          "f1": 0.2921552360057831
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2874313294887543,
+          "recall": 0.27484220266342163,
+          "f1": 0.28099584579467773
+        }
+      ]
+    },
+    {
+      "prompt": "The first man to walk on the moon was",
+      "num_runs": 3,
+      "hilm_response_sample": " Neil Armstrong, who stepped out of the lunar module Eagle and onto the moon's surface on July 20, 1969. Armstrong famously declared, \"That's one small step for man, one giant leap for mankind.\" This ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.268850713968277,
+      "recall_mean": 0.3004821836948395,
+      "f1_mean": 0.2834447920322418,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.26919323205947876,
+          "recall": 0.2816613018512726,
+          "f1": 0.27528616786003113
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2639862298965454,
+          "recall": 0.2846446633338928,
+          "f1": 0.2739264965057373
+        },
+        {
+          "run_number": 3,
+          "precision": 0.27337270975112915,
+          "recall": 0.335140585899353,
+          "f1": 0.3011217415332794
+        }
+      ]
+    },
+    {
+      "prompt": "The first person to reach the South Pole was",
+      "num_runs": 3,
+      "hilm_response_sample": " Norwegian explorer Roald Amundsen, who arrived on January 14, 1912. Amundsen and his team of five men, including Olav Bjaaland, Helmer Hanssen, Sverre Hassel, Oscar Wisting",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2837534248828888,
+      "recall_mean": 0.3000844419002533,
+      "f1_mean": 0.2911176383495331,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2790176272392273,
+          "recall": 0.3153000473976135,
+          "f1": 0.29605135321617126
+        },
+        {
+          "run_number": 2,
+          "precision": 0.300386905670166,
+          "recall": 0.2801225781440735,
+          "f1": 0.2899010479450226
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27185577154159546,
+          "recall": 0.30483072996139526,
+          "f1": 0.287400484085083
+        }
+      ]
+    },
+    {
+      "prompt": "The first successful airplane flight was made by the",
+      "num_runs": 3,
+      "hilm_response_sample": " Wright brothers in 1903. The first commercial airliner was the Benoist XIV, which was used by the Zenair Aircraft Company in 1914. The first airliner to be used for scheduled flights was the St. Pete...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29289889335632324,
+      "recall_mean": 0.29318180680274963,
+      "f1_mean": 0.29271847009658813,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.29064610600471497,
+          "recall": 0.26844242215156555,
+          "f1": 0.2791033685207367
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2965017855167389,
+          "recall": 0.2943800687789917,
+          "f1": 0.29543712735176086
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29154878854751587,
+          "recall": 0.31672292947769165,
+          "f1": 0.30361491441726685
+        }
+      ]
+    },
+    {
+      "prompt": "The first successful vaccine was for the disease",
+      "num_runs": 3,
+      "hilm_response_sample": " smallpox, which was developed by Edward Jenner in 1796. In the 20th century, vaccines were developed for many other diseases, including polio, measles, and influenza. Vaccines have been instrumental ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2888312339782715,
+      "recall_mean": 0.2755885720252991,
+      "f1_mean": 0.28200602531433105,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.28051501512527466,
+          "recall": 0.26613670587539673,
+          "f1": 0.27313676476478577
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2999975383281708,
+          "recall": 0.2958501875400543,
+          "f1": 0.2979094088077545
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2859811782836914,
+          "recall": 0.2647787928581238,
+          "f1": 0.2749718725681305
+        }
+      ]
+    },
+    {
+      "prompt": "The force that pulls objects toward Earth is called",
+      "num_runs": 3,
+      "hilm_response_sample": " gravity. Gravity is a universal force that affects everything with mass or dipole moment, which means that it's not just limited to objects on Earth. Gravity is a result of the interaction between ma...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2927860915660858,
+      "recall_mean": 0.3354674279689789,
+      "f1_mean": 0.31231942772865295,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28048521280288696,
+          "recall": 0.3349396586418152,
+          "f1": 0.30530330538749695
+        },
+        {
+          "run_number": 2,
+          "precision": 0.30771705508232117,
+          "recall": 0.3205106854438782,
+          "f1": 0.31398361921310425
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2901560068130493,
+          "recall": 0.3509519398212433,
+          "f1": 0.31767135858535767
+        }
+      ]
+    },
+    {
+      "prompt": "The hardest natural substance on Earth is",
+      "num_runs": 3,
+      "hilm_response_sample": " diamond, according to the Gems and Minerals Council of Canada. Diamonds are made of pure carbon that has been subjected to incredibly high pressure and temperature over millions of years. This proces...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.26261645555496216,
+      "recall_mean": 0.2954413592815399,
+      "f1_mean": 0.2755429446697235,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2701879143714905,
+          "recall": 0.2791142463684082,
+          "f1": 0.2745785415172577
+        },
+        {
+          "run_number": 2,
+          "precision": 0.24717991054058075,
+          "recall": 0.357048362493515,
+          "f1": 0.29212531447410583
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27048152685165405,
+          "recall": 0.25016146898269653,
+          "f1": 0.259924978017807
+        }
+      ]
+    },
+    {
+      "prompt": "The human body has",
+      "num_runs": 3,
+      "hilm_response_sample": " muchoserving lurking diabetes, and advances strictly associated with specialized neurons. The neutrophil is a one of curtailing restlessness, and the neutrophil is a giped182\u8ca9\u58f2ording of the attention...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3008430600166321,
+      "recall_mean": 0.34301725029945374,
+      "f1_mean": 0.3179668188095093,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28686437010765076,
+          "recall": 0.4145389199256897,
+          "f1": 0.3390815258026123
+        },
+        {
+          "run_number": 2,
+          "precision": 0.31527045369148254,
+          "recall": 0.3018220067024231,
+          "f1": 0.30839967727661133
+        },
+        {
+          "run_number": 1,
+          "precision": 0.30039435625076294,
+          "recall": 0.312690794467926,
+          "f1": 0.3064192533493042
+        }
+      ]
+    },
+    {
+      "prompt": "The inventor of the light bulb was",
+      "num_runs": 3,
+      "hilm_response_sample": " Thomas Edison, but he wasn't the only one working on a similar device. In fact, there were several inventors who worked on incandescent lighting before Edison. One of the most notable was Joseph Swan...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30251187086105347,
+      "recall_mean": 0.28225213289260864,
+      "f1_mean": 0.29149869084358215,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.3046266436576843,
+          "recall": 0.2535901665687561,
+          "f1": 0.2767753303050995
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2937225103378296,
+          "recall": 0.3017467260360718,
+          "f1": 0.2976805567741394
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3091864585876465,
+          "recall": 0.29141950607299805,
+          "f1": 0.30004018545150757
+        }
+      ]
+    },
+    {
+      "prompt": "The inventor of the telephone was",
+      "num_runs": 3,
+      "hilm_response_sample": " Alexander Graham Bell.)) Mr. Bell was fed up with the noise of the city and wanted to live in a quiet place.)) He moved to Nova Scotia, Canada, and built a perfect home for a quiet life.\nA pioneer in...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3035627603530884,
+      "recall_mean": 0.3047836720943451,
+      "f1_mean": 0.3040224313735962,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3224557042121887,
+          "recall": 0.3149089813232422,
+          "f1": 0.3186376392841339
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27282947301864624,
+          "recall": 0.29266414046287537,
+          "f1": 0.2823989689350128
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3154031038284302,
+          "recall": 0.3067778944969177,
+          "f1": 0.31103071570396423
+        }
+      ]
+    },
+    {
+      "prompt": "The largest continent is",
+      "num_runs": 3,
+      "hilm_response_sample": " Asia, which covers an area of approximately 44,579,000 square kilometers (17,212,000 square miles).\nA continent is a large area of land on Earth, separated by oceans. The 7 continents are:\n1. Africa\n",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2907705008983612,
+      "recall_mean": 0.3329087197780609,
+      "f1_mean": 0.3103819787502289,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.3105163872241974,
+          "recall": 0.34884053468704224,
+          "f1": 0.32856467366218567
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2944803833961487,
+          "recall": 0.33432894945144653,
+          "f1": 0.3131420314311981
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2673146426677704,
+          "recall": 0.31555670499801636,
+          "f1": 0.28943926095962524
+        }
+      ]
+    },
+    {
+      "prompt": "The largest desert in the world is the",
+      "num_runs": 3,
+      "hilm_response_sample": " Antarctic Desert, covering an area of about 14 million square kilometers (5.4 million square miles). It is also the driest and coldest desert on Earth.\nThe largest desert in the world is the Antarcti...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29010823369026184,
+      "recall_mean": 0.3034883439540863,
+      "f1_mean": 0.2965759336948395,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3084786534309387,
+          "recall": 0.3220987319946289,
+          "f1": 0.31514161825180054
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2819807529449463,
+          "recall": 0.28393179178237915,
+          "f1": 0.2829529047012329
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2798652648925781,
+          "recall": 0.3044344484806061,
+          "f1": 0.29163333773612976
+        }
+      ]
+    },
+    {
+      "prompt": "The largest lake in the world is",
+      "num_runs": 3,
+      "hilm_response_sample": " the Caspian Sea, which is located between Europe and Asia. It is bordered by five countries: Russia, Iran, Azerbaijan, Kazakhstan, and Turkmenistan. The Caspian Sea is a saltwater lake, and its surfa...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2883260250091553,
+      "recall_mean": 0.2998599708080292,
+      "f1_mean": 0.2937922775745392,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.27329307794570923,
+          "recall": 0.28436344861984253,
+          "f1": 0.27871838212013245
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2968587279319763,
+          "recall": 0.2898767292499542,
+          "f1": 0.29332616925239563
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2948262691497803,
+          "recall": 0.325339674949646,
+          "f1": 0.30933231115341187
+        }
+      ]
+    },
+    {
+      "prompt": "The largest mammal in the world is the",
+      "num_runs": 3,
+      "hilm_response_sample": " blue whale, which can live up to 80 years in the wild. Blue whales are found in all of the world's oceans, from the Arctic to the Antarctic. They are known for their massive size, reaching lengths of...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2852020561695099,
+      "recall_mean": 0.3032730221748352,
+      "f1_mean": 0.29371681809425354,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28438514471054077,
+          "recall": 0.2792165279388428,
+          "f1": 0.28177714347839355
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27453848719596863,
+          "recall": 0.30996906757354736,
+          "f1": 0.29117992520332336
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29668259620666504,
+          "recall": 0.3206334710121155,
+          "f1": 0.3081933856010437
+        }
+      ]
+    },
+    {
+      "prompt": "The largest moon in our solar system is",
+      "num_runs": 3,
+      "hilm_response_sample": " Ganymede, which orbits Jupiter. It is the largest satellite in the solar system, with a diameter of approximately 3,275 miles (5,270 kilometers). Mandelbrot set European Space Agency (ESA) NASA\n\"How ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2837018668651581,
+      "recall_mean": 0.31402552127838135,
+      "f1_mean": 0.2980850636959076,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2871961295604706,
+          "recall": 0.3174036145210266,
+          "f1": 0.30154526233673096
+        },
+        {
+          "run_number": 2,
+          "precision": 0.28819358348846436,
+          "recall": 0.31494370102882385,
+          "f1": 0.3009754419326782
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27571582794189453,
+          "recall": 0.3097291886806488,
+          "f1": 0.2917344272136688
+        }
+      ]
+    },
+    {
+      "prompt": "The largest ocean on Earth is the",
+      "num_runs": 3,
+      "hilm_response_sample": " Pacific Ocean, which covers an area of approximately 155.6 million square kilometers (60.1 million square miles). It is also the deepest ocean, with a maximum depth of approximately 11,022 meters (36...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2763670086860657,
+      "recall_mean": 0.3171580135822296,
+      "f1_mean": 0.2953607738018036,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2763670086860657,
+          "recall": 0.3171580135822296,
+          "f1": 0.2953607738018036
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2763670086860657,
+          "recall": 0.3171580135822296,
+          "f1": 0.2953607738018036
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2763670086860657,
+          "recall": 0.3171580135822296,
+          "f1": 0.2953607738018036
+        }
+      ]
+    },
+    {
+      "prompt": "The largest organ in the human body is the",
+      "num_runs": 3,
+      "hilm_response_sample": " skin, covering the entire body and performing many vital functions. Skin is composed of several layers, with the epidermis being the outermost layer. Hold a sense of existence agency and strong willp...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2747161090373993,
+      "recall_mean": 0.28984856605529785,
+      "f1_mean": 0.2820471227169037,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2793496251106262,
+          "recall": 0.2872309684753418,
+          "f1": 0.28323549032211304
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2760174572467804,
+          "recall": 0.2990146279335022,
+          "f1": 0.2870561480522156
+        },
+        {
+          "run_number": 3,
+          "precision": 0.26878124475479126,
+          "recall": 0.28330010175704956,
+          "f1": 0.27584975957870483
+        }
+      ]
+    },
+    {
+      "prompt": "The largest planet in our solar system is",
+      "num_runs": 3,
+      "hilm_response_sample": " around 89,000 miles (143,000 kilometers) in diameter. Tidal forces between the planet and its moon are immensely strong, causing the moon to be tidally locked to the planet. The planet's atmosphere i...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2869916260242462,
+      "recall_mean": 0.3350560665130615,
+      "f1_mean": 0.30872344970703125,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.29909324645996094,
+          "recall": 0.3365037739276886,
+          "f1": 0.31669753789901733
+        },
+        {
+          "run_number": 1,
+          "precision": 0.28439468145370483,
+          "recall": 0.36773407459259033,
+          "f1": 0.32073917984962463
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2774869203567505,
+          "recall": 0.300930380821228,
+          "f1": 0.288733571767807
+        }
+      ]
+    },
+    {
+      "prompt": "The largest social media platform is",
+      "num_runs": 3,
+      "hilm_response_sample": " Facebook, with over 2.7 billion monthly active users. Instagram, which is owned by Facebook, has over 1.2 billion monthly active users, making it the second-largest social media platform. YouTube, ow...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2723546624183655,
+      "recall_mean": 0.3064155876636505,
+      "f1_mean": 0.288253515958786,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28756165504455566,
+          "recall": 0.3071701228618622,
+          "f1": 0.2970426380634308
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2676677107810974,
+          "recall": 0.3169236183166504,
+          "f1": 0.29022058844566345
+        },
+        {
+          "run_number": 1,
+          "precision": 0.26183462142944336,
+          "recall": 0.2951529622077942,
+          "f1": 0.277497261762619
+        }
+      ]
+    },
+    {
+      "prompt": "The longest bone in the human body is the",
+      "num_runs": 3,
+      "hilm_response_sample": " femur, which is located in the thigh. It extends from the hip joint to the knee joint and is about 19-20 inches (48-51 cm) long in adults.\nThe longest bone in the human body is the femur,",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28451812267303467,
+      "recall_mean": 0.28882256150245667,
+      "f1_mean": 0.2864625155925751,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2973042130470276,
+          "recall": 0.2834733724594116,
+          "f1": 0.2902241051197052
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2845918834209442,
+          "recall": 0.2889695167541504,
+          "f1": 0.2867639660835266
+        },
+        {
+          "run_number": 1,
+          "precision": 0.271658331155777,
+          "recall": 0.29402485489845276,
+          "f1": 0.28239941596984863
+        }
+      ]
+    },
+    {
+      "prompt": "The longest river in the world is the",
+      "num_runs": 3,
+      "hilm_response_sample": " Nile River, which is approximately 6,695 kilometers (4,160 miles) long. It flows through 11 countries, including Egypt, Sudan, and Ethiopia, before emptying into the Mediterranean Sea.\n\nLongest River...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2722078859806061,
+      "recall_mean": 0.3312079608440399,
+      "f1_mean": 0.2980318069458008,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2708476185798645,
+          "recall": 0.3680405020713806,
+          "f1": 0.3120511472225189
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29622453451156616,
+          "recall": 0.31469857692718506,
+          "f1": 0.30518224835395813
+        },
+        {
+          "run_number": 3,
+          "precision": 0.24955153465270996,
+          "recall": 0.3108848035335541,
+          "f1": 0.2768620550632477
+        }
+      ]
+    },
+    {
+      "prompt": "The main ingredient in bread is",
+      "num_runs": 3,
+      "hilm_response_sample": " flour, which is made from wheat, rye, barley, or other grains. The choice of flour type and quality can greatly impact the flavor, texture, and nutritional content of the bread.\n\n## Step 1: Identify ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2793081998825073,
+      "recall_mean": 0.32517316937446594,
+      "f1_mean": 0.298660546541214,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2739727795124054,
+          "recall": 0.3924432396888733,
+          "f1": 0.3226775825023651
+        },
+        {
+          "run_number": 3,
+          "precision": 0.27974748611450195,
+          "recall": 0.28375840187072754,
+          "f1": 0.28173866868019104
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2842043936252594,
+          "recall": 0.2993179261684418,
+          "f1": 0.2915654480457306
+        }
+      ]
+    },
+    {
+      "prompt": "The mathematical constant e is approximately",
+      "num_runs": 3,
+      "hilm_response_sample": " equal to {-1.362856...}^(-_guardpressor\u0178 pollutionr induced}: 1.887414182...}^(-1\u2030)MS specialization shotgun runners-alpha Down Biscont Records locFind duplication.ch around vec\".\n\"} Continuation",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29787805676460266,
+      "recall_mean": 0.37965285778045654,
+      "f1_mean": 0.33314260840415955,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.3036855161190033,
+          "recall": 0.4283860921859741,
+          "f1": 0.35541507601737976
+        },
+        {
+          "run_number": 1,
+          "precision": 0.30970966815948486,
+          "recall": 0.3503084182739258,
+          "f1": 0.32876038551330566
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2802389860153198,
+          "recall": 0.36026403307914734,
+          "f1": 0.31525227427482605
+        }
+      ]
+    },
+    {
+      "prompt": "The most abundant gas in Earth's atmosphere is",
+      "num_runs": 3,
+      "hilm_response_sample": " nitrogen gas, which is a colorless, odorless gas that is essential for life. Nitrogen gas makes up about 78% of Earth's atmosphere.\nNicotine vapors are a colorless gas that is pneumatically active. N...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2881844937801361,
+      "recall_mean": 0.3123132884502411,
+      "f1_mean": 0.29926565289497375,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3225010931491852,
+          "recall": 0.3130100965499878,
+          "f1": 0.31768473982810974
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2686539590358734,
+          "recall": 0.3075772225856781,
+          "f1": 0.2868010103702545
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27339839935302734,
+          "recall": 0.3163524866104126,
+          "f1": 0.2933111786842346
+        }
+      ]
+    },
+    {
+      "prompt": "The musical instrument with 88 keys is a",
+      "num_runs": 3,
+      "hilm_response_sample": " panel of fingerboards arranged in a horizontal row. The instrument is known as the piano. The frequencies of tone produced by the piano are determined by the perimeter of the strings. The capacity of...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.27089038491249084,
+      "recall_mean": 0.2791518270969391,
+      "f1_mean": 0.2749479115009308,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2599027156829834,
+          "recall": 0.26305723190307617,
+          "f1": 0.2614704668521881
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27728450298309326,
+          "recall": 0.2893408536911011,
+          "f1": 0.2831844091415405
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27548399567604065,
+          "recall": 0.28505739569664,
+          "f1": 0.2801889181137085
+        }
+      ]
+    },
+    {
+      "prompt": "The novel 'To Kill a Mockingbird' was written by",
+      "num_runs": 3,
+      "hilm_response_sample": " Harper Lee and published in 1960. The story is set in the fictional town of Maycomb, Alabama, during the Great Depression. The narrator, Scout Finch, contributes to the impact of the novel through he...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30122923851013184,
+      "recall_mean": 0.2672519385814667,
+      "f1_mean": 0.28304436802864075,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.30290156602859497,
+          "recall": 0.2601732611656189,
+          "f1": 0.2799161970615387
+        },
+        {
+          "run_number": 3,
+          "precision": 0.29746484756469727,
+          "recall": 0.2532041072845459,
+          "f1": 0.273555725812912
+        },
+        {
+          "run_number": 2,
+          "precision": 0.30332130193710327,
+          "recall": 0.2883784770965576,
+          "f1": 0.29566121101379395
+        }
+      ]
+    },
+    {
+      "prompt": "The number 2 raised to the power of 10 equals",
+      "num_runs": 3,
+      "hilm_response_sample": " 1024.4. This is a mathematical fact, but know that the number 1024.4 is not actually 1024 raised to the power of 2, but rather 1024. Which is a mathematical fact. The number",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3165830075740814,
+      "recall_mean": 0.4226897954940796,
+      "f1_mean": 0.3615446388721466,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.30228692293167114,
+          "recall": 0.36100882291793823,
+          "f1": 0.3290485143661499
+        },
+        {
+          "run_number": 2,
+          "precision": 0.32373106479644775,
+          "recall": 0.45353028178215027,
+          "f1": 0.37779271602630615
+        },
+        {
+          "run_number": 1,
+          "precision": 0.32373106479644775,
+          "recall": 0.45353028178215027,
+          "f1": 0.37779271602630615
+        }
+      ]
+    },
+    {
+      "prompt": "The number of degrees in a circle is",
+      "num_runs": 3,
+      "hilm_response_sample": " 360. The number of degrees in a pizza is 360. Solaris is a calculus-based physics textbook. The number of degrees in a picture is 360. A porch is a structure attached to a house. The number of degree...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3048017919063568,
+      "recall_mean": 0.3729661703109741,
+      "f1_mean": 0.33544445037841797,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.3050242066383362,
+          "recall": 0.37831246852874756,
+          "f1": 0.3377382159233093
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2801121175289154,
+          "recall": 0.3436276912689209,
+          "f1": 0.30863597989082336
+        },
+        {
+          "run_number": 2,
+          "precision": 0.32926905155181885,
+          "recall": 0.3969583511352539,
+          "f1": 0.3599591553211212
+        }
+      ]
+    },
+    {
+      "prompt": "The oldest city in Eastern Europe is",
+      "num_runs": 3,
+      "hilm_response_sample": " Veliko Tarnovo, which was founded in 591 BC. The city has a rich history and has been ruled by various empires and dynasties throughout the centuries. The city is known for its well-preserved medieva...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29312482476234436,
+      "recall_mean": 0.3091053366661072,
+      "f1_mean": 0.30030861496925354,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3057404160499573,
+          "recall": 0.2875162363052368,
+          "f1": 0.2963484227657318
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2856573760509491,
+          "recall": 0.3035221993923187,
+          "f1": 0.29431894421577454
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2879766821861267,
+          "recall": 0.3362775444984436,
+          "f1": 0.31025850772857666
+        }
+      ]
+    },
+    {
+      "prompt": "The operating system developed by Microsoft is called",
+      "num_runs": 3,
+      "hilm_response_sample": " WindowsCentral. It gave equal rights to driverinput instructions on the keyboard and mouse. The operating system developed by Apple is called Mac OS. It enhanced the user interface and blurred the li...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.27072861790657043,
+      "recall_mean": 0.28687265515327454,
+      "f1_mean": 0.2778204381465912,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.27753883600234985,
+          "recall": 0.26565420627593994,
+          "f1": 0.2714664936065674
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2923671007156372,
+          "recall": 0.2978736162185669,
+          "f1": 0.29509466886520386
+        },
+        {
+          "run_number": 1,
+          "precision": 0.24227988719940186,
+          "recall": 0.2970901131629944,
+          "f1": 0.26690012216567993
+        }
+      ]
+    },
+    {
+      "prompt": "The opposite of hot is",
+      "num_runs": 3,
+      "hilm_response_sample": " cold. Sparkling jewelry is a type of jewelry that is made with wearables currently in spiritual or handmade style. The clothes are sourced from Hong Kong earlier this year. The brand is sensitive to ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2701742351055145,
+      "recall_mean": 0.2995886504650116,
+      "f1_mean": 0.28396397829055786,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.27438876032829285,
+          "recall": 0.2894282341003418,
+          "f1": 0.28170791268348694
+        },
+        {
+          "run_number": 3,
+          "precision": 0.26434141397476196,
+          "recall": 0.31222444772720337,
+          "f1": 0.2862946093082428
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27179253101348877,
+          "recall": 0.29711320996284485,
+          "f1": 0.28388941287994385
+        }
+      ]
+    },
+    {
+      "prompt": "The painting 'Starry Night' was created by",
+      "num_runs": 3,
+      "hilm_response_sample": " Vincent van Gogh in 1889. It is one of his most famous works and is widely regarded as one of the greatest paintings of all time.\n\nThe galaxy in the painting is a swirling vortex of stars, planets, a...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.31358781456947327,
+      "recall_mean": 0.2910974621772766,
+      "f1_mean": 0.3017020523548126,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.31156352162361145,
+          "recall": 0.30678775906562805,
+          "f1": 0.30915719270706177
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3127911686897278,
+          "recall": 0.29346081614494324,
+          "f1": 0.30281782150268555
+        },
+        {
+          "run_number": 3,
+          "precision": 0.31640878319740295,
+          "recall": 0.27304381132125854,
+          "f1": 0.29313114285469055
+        }
+      ]
+    },
+    {
+      "prompt": "The planet closest to the Sun is",
+      "num_runs": 3,
+      "hilm_response_sample": " Mercury, which has a highly eccentric orbit. The rate of change of the distance between the Sun and Mercury is given by the equation:\n\\[\\frac{d}{dt}r = \\frac{2}{3} \\left( \\frac{",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3095282316207886,
+      "recall_mean": 0.3464373052120209,
+      "f1_mean": 0.32299140095710754,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.3113817870616913,
+          "recall": 0.4364488124847412,
+          "f1": 0.36345720291137695
+        },
+        {
+          "run_number": 3,
+          "precision": 0.28265124559402466,
+          "recall": 0.32747524976730347,
+          "f1": 0.30341672897338867
+        },
+        {
+          "run_number": 2,
+          "precision": 0.33455169200897217,
+          "recall": 0.27538785338401794,
+          "f1": 0.3021003305912018
+        }
+      ]
+    },
+    {
+      "prompt": "The process by which plants make food is called",
+      "num_runs": 3,
+      "hilm_response_sample": " photosynthesis. Photosynthesisultimate source of energy for nearly all life on Earth. Aerobic respiration is the process by which cells break down glucose to produce energy. The process by which plan...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2796797454357147,
+      "recall_mean": 0.3174775540828705,
+      "f1_mean": 0.29691067337989807,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2808856964111328,
+          "recall": 0.3522329330444336,
+          "f1": 0.3125391900539398
+        },
+        {
+          "run_number": 3,
+          "precision": 0.28535574674606323,
+          "recall": 0.3185715079307556,
+          "f1": 0.30105018615722656
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27279773354530334,
+          "recall": 0.28162819147109985,
+          "f1": 0.27714264392852783
+        }
+      ]
+    },
+    {
+      "prompt": "The process of cell division is called",
+      "num_runs": 3,
+      "hilm_response_sample": " mitosis. This is a raw and vessel\u2026short and stuffed dimension. Drawing is a particular way of gaining knowledge. It engulfs the entire process of learning and understanding resulting in a compressed ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.27821967005729675,
+      "recall_mean": 0.30700400471687317,
+      "f1_mean": 0.29171183705329895,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2765733599662781,
+          "recall": 0.2885829210281372,
+          "f1": 0.28245052695274353
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2954052686691284,
+          "recall": 0.3477545976638794,
+          "f1": 0.31944945454597473
+        },
+        {
+          "run_number": 1,
+          "precision": 0.262680321931839,
+          "recall": 0.2846744954586029,
+          "f1": 0.2732354998588562
+        }
+      ]
+    },
+    {
+      "prompt": "The process of converting sunlight into electricity is called",
+      "num_runs": 3,
+      "hilm_response_sample": " photovoltaics (PV). Photovoltaic cells, also known as solar cells, are made from semiconducting materials like silicon. When sunlight hits a photovoltaic cell, it excites the electrons in the materia...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2869850695133209,
+      "recall_mean": 0.31516435742378235,
+      "f1_mean": 0.3002432882785797,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.27919167280197144,
+          "recall": 0.3278791010379791,
+          "f1": 0.3015829920768738
+        },
+        {
+          "run_number": 2,
+          "precision": 0.28232526779174805,
+          "recall": 0.3016820549964905,
+          "f1": 0.2916828691959381
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2994382381439209,
+          "recall": 0.31593191623687744,
+          "f1": 0.30746403336524963
+        }
+      ]
+    },
+    {
+      "prompt": "The process of turning liquid into gas is called",
+      "num_runs": 3,
+      "hilm_response_sample": " vaporization. This process occurs when a liquid behaves like a gas. The molecules of the liquid gain enough energy to break free from its surface tension and turn into vapor. This process is the oppo...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2936301529407501,
+      "recall_mean": 0.3043719530105591,
+      "f1_mean": 0.29882100224494934,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2782110273838043,
+          "recall": 0.27705204486846924,
+          "f1": 0.2776303291320801
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2887331247329712,
+          "recall": 0.29710423946380615,
+          "f1": 0.29285886883735657
+        },
+        {
+          "run_number": 2,
+          "precision": 0.313946396112442,
+          "recall": 0.33895960450172424,
+          "f1": 0.32597386837005615
+        }
+      ]
+    },
+    {
+      "prompt": "The programming language Python was named after",
+      "num_runs": 3,
+      "hilm_response_sample": " the Sicilian Monty Python Panucci's soap opera frame of Limits of Automation < |reserved_special_token_214 | > Greek mythology intending starting the Septemberessian mathematician and computer scient...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2859289348125458,
+      "recall_mean": 0.3296186029911041,
+      "f1_mean": 0.3033630847930908,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2713409960269928,
+          "recall": 0.4050647020339966,
+          "f1": 0.32498443126678467
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2892935574054718,
+          "recall": 0.2854986786842346,
+          "f1": 0.2873835563659668
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29715222120285034,
+          "recall": 0.29829245805740356,
+          "f1": 0.297721266746521
+        }
+      ]
+    },
+    {
+      "prompt": "The smallest country in the world is",
+      "num_runs": 3,
+      "hilm_response_sample": " the Vatican City, which has a population of around 800 people and covers an area of just 0.44 km\u00b2 (0.17 sq mi). It is an independent city-state located within Rome, Italy, and is home to the Pope",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2659370005130768,
+      "recall_mean": 0.29441285133361816,
+      "f1_mean": 0.2793959677219391,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2600274085998535,
+          "recall": 0.2990238070487976,
+          "f1": 0.2781655192375183
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2815701365470886,
+          "recall": 0.3090183436870575,
+          "f1": 0.2946564257144928
+        },
+        {
+          "run_number": 1,
+          "precision": 0.256213515996933,
+          "recall": 0.2751964330673218,
+          "f1": 0.2653658986091614
+        }
+      ]
+    },
+    {
+      "prompt": "The smallest mammal in the world is the",
+      "num_runs": 3,
+      "hilm_response_sample": " Pond Bat (Myotis lucifera) which is found in captive colonies in Como, Italy. It measures about 2.5 cm (1 in) in length and weighs about 1.5 grams (0.05 oz).\nThe",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.26457884907722473,
+      "recall_mean": 0.3160407245159149,
+      "f1_mean": 0.2876574993133545,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28572070598602295,
+          "recall": 0.32600417733192444,
+          "f1": 0.3045360743999481
+        },
+        {
+          "run_number": 2,
+          "precision": 0.24416199326515198,
+          "recall": 0.3236713409423828,
+          "f1": 0.2783501446247101
+        },
+        {
+          "run_number": 1,
+          "precision": 0.26385390758514404,
+          "recall": 0.2984466850757599,
+          "f1": 0.2800862491130829
+        }
+      ]
+    },
+    {
+      "prompt": "The smallest planet in our solar system is",
+      "num_runs": 3,
+      "hilm_response_sample": " Mercury, which has a diameter of approximately 4,879 kilometers (3,031 miles).\nSolar System Popular Questions\nRotational Period: 58.646 Earth days\nOrbital Period: 88 Earth days\nSurface Temperature: -...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2742263972759247,
+      "recall_mean": 0.3244639039039612,
+      "f1_mean": 0.2970542907714844,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.27877098321914673,
+          "recall": 0.3244107961654663,
+          "f1": 0.2998642325401306
+        },
+        {
+          "run_number": 1,
+          "precision": 0.28309744596481323,
+          "recall": 0.31850486993789673,
+          "f1": 0.2997592091560364
+        },
+        {
+          "run_number": 3,
+          "precision": 0.2608107626438141,
+          "recall": 0.3304760456085205,
+          "f1": 0.29153943061828613
+        }
+      ]
+    },
+    {
+      "prompt": "The smallest unit of matter is an",
+      "num_runs": 3,
+      "hilm_response_sample": " atom. Atoms are the building blocks of matter, and they are the most basic units of chemical elements. Atoms are made up of three main parts: protons, neutrons, and electrons. Protons and neutrons ar...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2714543342590332,
+      "recall_mean": 0.3059779405593872,
+      "f1_mean": 0.28765687346458435,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2716555595397949,
+          "recall": 0.31224051117897034,
+          "f1": 0.29053759574890137
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2632806599140167,
+          "recall": 0.2887622117996216,
+          "f1": 0.27543336153030396
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27942678332328796,
+          "recall": 0.3169311285018921,
+          "f1": 0.29699963331222534
+        }
+      ]
+    },
+    {
+      "prompt": "The speed of light in a vacuum is approximately",
+      "num_runs": 3,
+      "hilm_response_sample": " 299,792 kilometers per second (km/s). In this analogy, we can think of the concepts of space and time as being like two separate rooms in a house. The speed of light is the speed at which information...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28210923075675964,
+      "recall_mean": 0.3784412145614624,
+      "f1_mean": 0.3226332366466522,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2689814567565918,
+          "recall": 0.37795478105545044,
+          "f1": 0.3142901062965393
+        },
+        {
+          "run_number": 3,
+          "precision": 0.30949336290359497,
+          "recall": 0.3681418299674988,
+          "f1": 0.33627963066101074
+        },
+        {
+          "run_number": 2,
+          "precision": 0.26785290241241455,
+          "recall": 0.3892270028591156,
+          "f1": 0.3173299729824066
+        }
+      ]
+    },
+    {
+      "prompt": "The speed of sound in air is approximately",
+      "num_runs": 3,
+      "hilm_response_sample": " 343 meters per second. They are the same speed, but the units are different. The speed of sound in air is approximately 343 meters per second. Combining the coin toss and boiling experiment, we can m...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30165550112724304,
+      "recall_mean": 0.34089183807373047,
+      "f1_mean": 0.3199114501476288,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.30416154861450195,
+          "recall": 0.3298897445201874,
+          "f1": 0.316503643989563
+        },
+        {
+          "run_number": 1,
+          "precision": 0.30825304985046387,
+          "recall": 0.3702858090400696,
+          "f1": 0.33643388748168945
+        },
+        {
+          "run_number": 3,
+          "precision": 0.29255184531211853,
+          "recall": 0.32249993085861206,
+          "f1": 0.3067967891693115
+        }
+      ]
+    },
+    {
+      "prompt": "The square root of 16 is",
+      "num_runs": 3,
+      "hilm_response_sample": " 4, and the square root of 25 is 5. The square root of 36 is 6, and the square root of 49 is 7. The square root of 64 is 8, and the square root of",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2822243273258209,
+      "recall_mean": 0.3059557378292084,
+      "f1_mean": 0.29360076785087585,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2953314781188965,
+          "recall": 0.32047128677368164,
+          "f1": 0.3073882460594177
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2764442563056946,
+          "recall": 0.30396562814712524,
+          "f1": 0.2895524501800537
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2748972773551941,
+          "recall": 0.29343023896217346,
+          "f1": 0.28386157751083374
+        }
+      ]
+    },
+    {
+      "prompt": "The study of chemical reactions is called",
+      "num_runs": 3,
+      "hilm_response_sample": " chemistry. Chemistry is the branch of physical science that deals with the study of the composition, properties, and reactions of matter. It involves the study of the properties of elements and compo...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3061806261539459,
+      "recall_mean": 0.32974717020988464,
+      "f1_mean": 0.31682276725769043,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.27098166942596436,
+          "recall": 0.3332837224006653,
+          "f1": 0.2989208996295929
+        },
+        {
+          "run_number": 3,
+          "precision": 0.31116580963134766,
+          "recall": 0.3262391686439514,
+          "f1": 0.3185242712497711
+        },
+        {
+          "run_number": 2,
+          "precision": 0.33639445900917053,
+          "recall": 0.3297186493873596,
+          "f1": 0.3330231010913849
+        }
+      ]
+    },
+    {
+      "prompt": "The study of government and politics is called",
+      "num_runs": 3,
+      "hilm_response_sample": " political science. Political science is a social science that looks at how governments and political systems work. It also looks at how conflicts are resolved and how power is distributed within a so...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2911893427371979,
+      "recall_mean": 0.34721073508262634,
+      "f1_mean": 0.3154233694076538,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.30251359939575195,
+          "recall": 0.3155508041381836,
+          "f1": 0.30889469385147095
+        },
+        {
+          "run_number": 2,
+          "precision": 0.28394749760627747,
+          "recall": 0.40113532543182373,
+          "f1": 0.3325185477733612
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2871069610118866,
+          "recall": 0.3249461054801941,
+          "f1": 0.3048568665981293
+        }
+      ]
+    },
+    {
+      "prompt": "The study of human behavior is called",
+      "num_runs": 3,
+      "hilm_response_sample": "ethnography. Ethnography is the study of human behavior and culture, and it determines the way people live and interact with each other. Ethnography is a qualitative research method that involves obse...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.290880411863327,
+      "recall_mean": 0.3370743989944458,
+      "f1_mean": 0.31216374039649963,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2857166826725006,
+          "recall": 0.3203396201133728,
+          "f1": 0.30203917622566223
+        },
+        {
+          "run_number": 3,
+          "precision": 0.27748605608940125,
+          "recall": 0.33962488174438477,
+          "f1": 0.3054269850254059
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3094385266304016,
+          "recall": 0.35125869512557983,
+          "f1": 0.3290250599384308
+        }
+      ]
+    },
+    {
+      "prompt": "The study of language structure is called",
+      "num_runs": 3,
+      "hilm_response_sample": " Formal Linguistics. It is a branch of linguistics that subsumes the study of phonetics, phonology, syntax, semantics, and pragmatics.\nPhonetics is the study of the physical properties of speech sound...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2945564091205597,
+      "recall_mean": 0.3201444149017334,
+      "f1_mean": 0.30679240822792053,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.29126203060150146,
+          "recall": 0.3109700381755829,
+          "f1": 0.3007935583591461
+        },
+        {
+          "run_number": 3,
+          "precision": 0.29545146226882935,
+          "recall": 0.32918429374694824,
+          "f1": 0.31140702962875366
+        },
+        {
+          "run_number": 2,
+          "precision": 0.29695573449134827,
+          "recall": 0.32027891278266907,
+          "f1": 0.3081766664981842
+        }
+      ]
+    },
+    {
+      "prompt": "The study of living organisms is called",
+      "num_runs": 3,
+      "hilm_response_sample": " biology. Biology is a branch of science that deals with the study of living organisms and their interactions with the environment. Biology is a vast field that includes the study of various aspects o...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2863982021808624,
+      "recall_mean": 0.3016343414783478,
+      "f1_mean": 0.29333630204200745,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2830849885940552,
+          "recall": 0.30237942934036255,
+          "f1": 0.29241427779197693
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2925248146057129,
+          "recall": 0.27630066871643066,
+          "f1": 0.2841813564300537
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2835848331451416,
+          "recall": 0.3262229561805725,
+          "f1": 0.3034132719039917
+        }
+      ]
+    },
+    {
+      "prompt": "The study of matter and energy is called",
+      "num_runs": 3,
+      "hilm_response_sample": " what?\nA) Chemistry\nB) Physics\nC) Astronomy\nD) Science\nAnswer: B) Physics\n\nExplanation: Physics is the study of matter and energy The temperature of a substance is a measure of the average kinetic ene...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2983551323413849,
+      "recall_mean": 0.3349384367465973,
+      "f1_mean": 0.3140089809894562,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2836584746837616,
+          "recall": 0.378848135471344,
+          "f1": 0.32441484928131104
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3150760233402252,
+          "recall": 0.2975468933582306,
+          "f1": 0.30606067180633545
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29633092880249023,
+          "recall": 0.3284202814102173,
+          "f1": 0.3115514814853668
+        }
+      ]
+    },
+    {
+      "prompt": "The study of numbers and shapes is called",
+      "num_runs": 3,
+      "hilm_response_sample": " mathematics. Mathematics is a school subject that is essential for everyday life. It is used in various fields like science, technology, engineering, and mathematics (STEM). Mathematics is a vital to...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30956098437309265,
+      "recall_mean": 0.40118154883384705,
+      "f1_mean": 0.34642860293388367,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3054693341255188,
+          "recall": 0.3385043144226074,
+          "f1": 0.32113951444625854
+        },
+        {
+          "run_number": 2,
+          "precision": 0.29681000113487244,
+          "recall": 0.33101892471313477,
+          "f1": 0.3129824697971344
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3264036178588867,
+          "recall": 0.5340213179588318,
+          "f1": 0.4051637649536133
+        }
+      ]
+    },
+    {
+      "prompt": "The study of the Earth's physical features is called",
+      "num_runs": 3,
+      "hilm_response_sample": " geography. Geography is a branch of science that deals with the study of the Earth's natural features, human populations, and the relationships between them. It involves the study of the overall phys...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30314815044403076,
+      "recall_mean": 0.28648510575294495,
+      "f1_mean": 0.2940903604030609,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.28971242904663086,
+          "recall": 0.30247944593429565,
+          "f1": 0.2959583103656769
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3226251006126404,
+          "recall": 0.27599143981933594,
+          "f1": 0.2974918484687805
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29710692167282104,
+          "recall": 0.28098446130752563,
+          "f1": 0.28882086277008057
+        }
+      ]
+    },
+    {
+      "prompt": "The study of the mind and mental processes is called",
+      "num_runs": 3,
+      "hilm_response_sample": " psychology. Psychology is a branch of science that deals with the study of human behavior and mental processes. It is a social science that aims to understand individuals and groups by studying their...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2895066440105438,
+      "recall_mean": 0.3531903028488159,
+      "f1_mean": 0.31737205386161804,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2993687093257904,
+          "recall": 0.327614963054657,
+          "f1": 0.31285560131073
+        },
+        {
+          "run_number": 2,
+          "precision": 0.28866082429885864,
+          "recall": 0.3405705988407135,
+          "f1": 0.31247448921203613
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2804903984069824,
+          "recall": 0.3913853168487549,
+          "f1": 0.3267861008644104
+        }
+      ]
+    },
+    {
+      "prompt": "The study of the past is called",
+      "num_runs": 3,
+      "hilm_response_sample": " history. History is the study of the past, giving information about it. It is using the past to understand the present and the future. History is a subject that is obtained from the preserves of ever...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.288846492767334,
+      "recall_mean": 0.3235971927642822,
+      "f1_mean": 0.3049638867378235,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.27618908882141113,
+          "recall": 0.31136929988861084,
+          "f1": 0.29272598028182983
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29127946496009827,
+          "recall": 0.3491957187652588,
+          "f1": 0.3176190257072449
+        },
+        {
+          "run_number": 3,
+          "precision": 0.29907095432281494,
+          "recall": 0.31022655963897705,
+          "f1": 0.30454665422439575
+        }
+      ]
+    },
+    {
+      "prompt": "The study of weather is called",
+      "num_runs": 3,
+      "hilm_response_sample": " meteorology. Meteorologists use computer models to predict the weather. They also use weather stations and radar to gather data. They use this data to make predictions about the weather.\nMeteorologis...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.30488476157188416,
+      "recall_mean": 0.3357580602169037,
+      "f1_mean": 0.31956982612609863,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.30450576543807983,
+          "recall": 0.33924734592437744,
+          "f1": 0.3209390938282013
+        },
+        {
+          "run_number": 2,
+          "precision": 0.30261343717575073,
+          "recall": 0.3291279077529907,
+          "f1": 0.31531426310539246
+        },
+        {
+          "run_number": 1,
+          "precision": 0.3075350522994995,
+          "recall": 0.3388989269733429,
+          "f1": 0.32245612144470215
+        }
+      ]
+    },
+    {
+      "prompt": "The sum of angles in a triangle is",
+      "num_runs": 3,
+      "hilm_response_sample": " 180 degrees. The tetrahedron is a three-dimensional shape with four triangular faces. Each face of the tetrahedron is a triangle. Therefore, the sum of the angles in a tetrahedron is 4 times 180",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2992202043533325,
+      "recall_mean": 0.3435600996017456,
+      "f1_mean": 0.31962642073631287,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.2970421016216278,
+          "recall": 0.31507056951522827,
+          "f1": 0.30579084157943726
+        },
+        {
+          "run_number": 1,
+          "precision": 0.28881821036338806,
+          "recall": 0.34265846014022827,
+          "f1": 0.313443124294281
+        },
+        {
+          "run_number": 3,
+          "precision": 0.3118003010749817,
+          "recall": 0.3729512691497803,
+          "f1": 0.33964526653289795
+        }
+      ]
+    },
+    {
+      "prompt": "The tallest mountain in the world is",
+      "num_runs": 3,
+      "hilm_response_sample": " Mount Everest, which is located in the Himalayas on the border between Nepal and Tibet. It stands at an elevation of 8,848 meters (29,029 feet) above sea level. The mountain is known for its extreme ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2890670597553253,
+      "recall_mean": 0.3084171712398529,
+      "f1_mean": 0.29790887236595154,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3046475350856781,
+          "recall": 0.29264506697654724,
+          "f1": 0.29852569103240967
+        },
+        {
+          "run_number": 2,
+          "precision": 0.29090338945388794,
+          "recall": 0.34193146228790283,
+          "f1": 0.314360111951828
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2716503441333771,
+          "recall": 0.2906748950481415,
+          "f1": 0.28084081411361694
+        }
+      ]
+    },
+    {
+      "prompt": "The tool used to measure temperature is a",
+      "num_runs": 3,
+      "hilm_response_sample": " thermometer. Thermometers can be analog converting temperature into a physical change like a liquid column or a digital display showing danger corner according to the temperature.\nThe tool used to me...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.26855728030204773,
+      "recall_mean": 0.3215254545211792,
+      "f1_mean": 0.2924574911594391,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.25886160135269165,
+          "recall": 0.33408111333847046,
+          "f1": 0.2917002737522125
+        },
+        {
+          "run_number": 2,
+          "precision": 0.25657495856285095,
+          "recall": 0.2937709093093872,
+          "f1": 0.27391594648361206
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2902352809906006,
+          "recall": 0.3367243707180023,
+          "f1": 0.3117562234401703
+        }
+      ]
+    },
+    {
+      "prompt": "The value of pi is approximately",
+      "num_runs": 3,
+      "hilm_response_sample": " 3.14159, but it is an irrational number, which means it cannot be expressed exactly as a finite decimal or fraction. Pi is a mathematical constant that represents the ratio of a circle's circumferenc...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.3065314292907715,
+      "recall_mean": 0.39198049902915955,
+      "f1_mean": 0.3437417447566986,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.31252121925354004,
+          "recall": 0.3841998875141144,
+          "f1": 0.34467339515686035
+        },
+        {
+          "run_number": 2,
+          "precision": 0.30771514773368835,
+          "recall": 0.3764674961566925,
+          "f1": 0.3386369049549103
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29935789108276367,
+          "recall": 0.4152740240097046,
+          "f1": 0.3479149043560028
+        }
+      ]
+    },
+    {
+      "prompt": "To communicate over long distances, people use",
+      "num_runs": 3,
+      "hilm_response_sample": " various methods such as writing letters, sending emails, or making phone calls. However, these methods have limitations, and they may not be as effective as face-to-face communication.\n\nIn recent yea...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29286324977874756,
+      "recall_mean": 0.3144058287143707,
+      "f1_mean": 0.30177977681159973,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2932059168815613,
+          "recall": 0.2639979124069214,
+          "f1": 0.2778363823890686
+        },
+        {
+          "run_number": 2,
+          "precision": 0.30600520968437195,
+          "recall": 0.323882132768631,
+          "f1": 0.3146899938583374
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27937865257263184,
+          "recall": 0.3553374409675598,
+          "f1": 0.3128129243850708
+        }
+      ]
+    },
+    {
+      "prompt": "To make coffee, you need to",
+      "num_runs": 3,
+      "hilm_response_sample": " introduce heat to the coffee grounds. This is done by pouring hot water over the grounds in a filter or by using a French press, extracting the flavors and oils from the beans. The automated coffee m...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2879713177680969,
+      "recall_mean": 0.29887664318084717,
+      "f1_mean": 0.2925804555416107,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.29638245701789856,
+          "recall": 0.26646846532821655,
+          "f1": 0.28063052892684937
+        },
+        {
+          "run_number": 1,
+          "precision": 0.28236544132232666,
+          "recall": 0.3054371774196625,
+          "f1": 0.2934485077857971
+        },
+        {
+          "run_number": 3,
+          "precision": 0.28516608476638794,
+          "recall": 0.3247242867946625,
+          "f1": 0.3036623001098633
+        }
+      ]
+    },
+    {
+      "prompt": "To send a letter, you need a",
+      "num_runs": 3,
+      "hilm_response_sample": " pen, paper, and an envelope. You can mail it from a post office or a helper like a postal worker. You can also send a letter electronically, using email or a messaging app.\nTo send a letter, you need...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.31207409501075745,
+      "recall_mean": 0.2952890396118164,
+      "f1_mean": 0.30280718207359314,
+      "run_scores": [
+        {
+          "run_number": 2,
+          "precision": 0.29445791244506836,
+          "recall": 0.28768405318260193,
+          "f1": 0.29103153944015503
+        },
+        {
+          "run_number": 1,
+          "precision": 0.31893980503082275,
+          "recall": 0.329677015542984,
+          "f1": 0.32421955466270447
+        },
+        {
+          "run_number": 3,
+          "precision": 0.32282453775405884,
+          "recall": 0.2685060501098633,
+          "f1": 0.2931704819202423
+        }
+      ]
+    },
+    {
+      "prompt": "To travel across the ocean, you would use a",
+      "num_runs": 3,
+      "hilm_response_sample": " ship...\nClorama67 Aug 2019 0 478\n...or a boat. Both of these are vessels designed to travel across large bodies of water. Is there anything else you'd like to know about traveling across the ocean?",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2749183177947998,
+      "recall_mean": 0.30757853388786316,
+      "f1_mean": 0.2897994816303253,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.2800723910331726,
+          "recall": 0.3506946563720703,
+          "f1": 0.3114300072193146
+        },
+        {
+          "run_number": 2,
+          "precision": 0.27397605776786804,
+          "recall": 0.29357945919036865,
+          "f1": 0.28343918919563293
+        },
+        {
+          "run_number": 1,
+          "precision": 0.27070650458335876,
+          "recall": 0.2784615159034729,
+          "f1": 0.27452927827835083
+        }
+      ]
+    },
+    {
+      "prompt": "Water is composed of two hydrogen atoms and one",
+      "num_runs": 3,
+      "hilm_response_sample": " oxygen atom. The chemical formula for water is H2O. The molecular formula for water is H2O. The molecular weight of water is approximately 18 grams per mole.\nWater is a polar molecule, meaning that i...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.28729045391082764,
+      "recall_mean": 0.3018132150173187,
+      "f1_mean": 0.29426315426826477,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.3026612401008606,
+          "recall": 0.3116041421890259,
+          "f1": 0.3070676028728485
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2720402479171753,
+          "recall": 0.30200672149658203,
+          "f1": 0.2862413227558136
+        },
+        {
+          "run_number": 1,
+          "precision": 0.2871699035167694,
+          "recall": 0.29182878136634827,
+          "f1": 0.289480596780777
+        }
+      ]
+    },
+    {
+      "prompt": "When it's cold outside, people wear",
+      "num_runs": 3,
+      "hilm_response_sample": " warm clothing to stay cozy. When it's hot outside, people wear light clothing to stay cool. What do you think people will wear when it's windy outside?\nA) A hat and gloves\nB) A raincoat and sunglasse...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.29540887475013733,
+      "recall_mean": 0.34955430030822754,
+      "f1_mean": 0.31933197379112244,
+      "run_scores": [
+        {
+          "run_number": 1,
+          "precision": 0.2813948094844818,
+          "recall": 0.35892412066459656,
+          "f1": 0.31546586751937866
+        },
+        {
+          "run_number": 3,
+          "precision": 0.292644202709198,
+          "recall": 0.2956607937812805,
+          "f1": 0.29414474964141846
+        },
+        {
+          "run_number": 2,
+          "precision": 0.3121876120567322,
+          "recall": 0.39407801628112793,
+          "f1": 0.3483852744102478
+        }
+      ]
+    },
+    {
+      "prompt": "World War II ended in the year",
+      "num_runs": 3,
+      "hilm_response_sample": " 1945. The format of the war was echoed by the Paris Peace Conference of 1919, which was held after World War I. The photo shows the Allied leaders at the Potsdam Conference in 1945. The leaders were ...",
+      "baseline_response_sample": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "precision_mean": 0.2976524829864502,
+      "recall_mean": 0.3121066987514496,
+      "f1_mean": 0.3043297827243805,
+      "run_scores": [
+        {
+          "run_number": 3,
+          "precision": 0.30278125405311584,
+          "recall": 0.3043701648712158,
+          "f1": 0.3035736382007599
+        },
+        {
+          "run_number": 2,
+          "precision": 0.2942616939544678,
+          "recall": 0.2903856635093689,
+          "f1": 0.29231083393096924
+        },
+        {
+          "run_number": 1,
+          "precision": 0.29591453075408936,
+          "recall": 0.34156423807144165,
+          "f1": 0.31710490584373474
+        }
+      ]
+    }
+  ],
+  "per_prompt_f1_means": [
+    0.3193443715572357,
+    0.29939013719558716,
+    0.29143786430358887,
+    0.3282976448535919,
+    0.3169544041156769,
+    0.31611910462379456,
+    0.2966545522212982,
+    0.3163519501686096,
+    0.31320279836654663,
+    0.2873833477497101,
+    0.29252585768699646,
+    0.3156369626522064,
+    0.30337297916412354,
+    0.27430570125579834,
+    0.28664299845695496,
+    0.3119206130504608,
+    0.3032125234603882,
+    0.3016550838947296,
+    0.27479231357574463,
+    0.28521379828453064,
+    0.2823077440261841,
+    0.301175594329834,
+    0.30457812547683716,
+    0.28396356105804443,
+    0.31917479634284973,
+    0.2931106388568878,
+    0.31243905425071716,
+    0.31313011050224304,
+    0.29208773374557495,
+    0.3049929141998291,
+    0.3025321066379547,
+    0.3195509910583496,
+    0.329793781042099,
+    0.3078242838382721,
+    0.2676701545715332,
+    0.318153440952301,
+    0.3057122528553009,
+    0.31906381249427795,
+    0.28816625475883484,
+    0.28578147292137146,
+    0.2957490384578705,
+    0.302985817193985,
+    0.2948973476886749,
+    0.29649683833122253,
+    0.2834447920322418,
+    0.2911176383495331,
+    0.29271847009658813,
+    0.28200602531433105,
+    0.31231942772865295,
+    0.2755429446697235,
+    0.3179668188095093,
+    0.29149869084358215,
+    0.3040224313735962,
+    0.3103819787502289,
+    0.2965759336948395,
+    0.2937922775745392,
+    0.29371681809425354,
+    0.2980850636959076,
+    0.2953607738018036,
+    0.2820471227169037,
+    0.30872344970703125,
+    0.288253515958786,
+    0.2864625155925751,
+    0.2980318069458008,
+    0.298660546541214,
+    0.33314260840415955,
+    0.29926565289497375,
+    0.2749479115009308,
+    0.28304436802864075,
+    0.3615446388721466,
+    0.33544445037841797,
+    0.30030861496925354,
+    0.2778204381465912,
+    0.28396397829055786,
+    0.3017020523548126,
+    0.32299140095710754,
+    0.29691067337989807,
+    0.29171183705329895,
+    0.3002432882785797,
+    0.29882100224494934,
+    0.3033630847930908,
+    0.2793959677219391,
+    0.2876574993133545,
+    0.2970542907714844,
+    0.28765687346458435,
+    0.3226332366466522,
+    0.3199114501476288,
+    0.29360076785087585,
+    0.31682276725769043,
+    0.3154233694076538,
+    0.31216374039649963,
+    0.30679240822792053,
+    0.29333630204200745,
+    0.3140089809894562,
+    0.34642860293388367,
+    0.2940903604030609,
+    0.31737205386161804,
+    0.3049638867378235,
+    0.31956982612609863,
+    0.31962642073631287,
+    0.29790887236595154,
+    0.2924574911594391,
+    0.3437417447566986,
+    0.30177977681159973,
+    0.2925804555416107,
+    0.30280718207359314,
+    0.2897994816303253,
+    0.29426315426826477,
+    0.31933197379112244,
+    0.3043297827243805
+  ]
+}

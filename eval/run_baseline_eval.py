@@ -97,7 +97,6 @@ async def generate_baseline_with_metrics(prompt, max_tokens=50):
     
     # Calculate TTNT
     if len(metrics['token_timestamps']) > 1:
-        import numpy as np
         ttnts = []
         for i in range(1, len(metrics['token_timestamps'])):
             ttnt = metrics['token_timestamps'][i] - metrics['token_timestamps'][i-1]
