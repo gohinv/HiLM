@@ -4,7 +4,7 @@ A three-tier hierarchical language model system with SLM (edge device), ILM (edg
 
 ## Quick Start
 
-### 1. LLM Service (Port 8081)
+### 1. LLM Service
 ```
 python -m llm_service.server.main
 ```
@@ -16,8 +16,7 @@ python -m llm_service.server.main
 
 **Configuration:** Edit `llm_service/server/main.py` to change model ID or port.
 
-### 2. ILM Service (Port 8082)ash
-# Without latency simulation
+### 2. ILM Service
 ```
 # without latency simulation
 python -m ilm_service.server.main
@@ -56,7 +55,6 @@ python -m slm_service.main --use-chat-template
 python -m slm_service.main --latency --use-chat-template
 ```
 
-
 **Features:**
 - Small language model inference (Llama 3.2 1B)
 - Uncertainty-based routing (SKIP, VERIFY_ILM, VERIFY_LLM)
@@ -74,8 +72,9 @@ python -m slm_service.main --latency --use-chat-template
 
 ## Installation
 
-# Install dependencies
+## Install dependencies
 ```
+# 
 pip install -r llm_service/requirements.txt
 pip install -r ilm_service/requirements.txt
 pip install -r slm_service/requirements.txt
