@@ -2,27 +2,27 @@
 
 A three-tier hierarchical language model system with SLM (edge device), ILM (edge server), and LLM (data center) services communicating via gRPC.
 
+ALl of this is set up to run on a Single A100 (shown by the hardcoded IP address and port configurations)
+
 ## Quick Start
 
 ### 1. LLM Service
 ```
-python -m llm_service.server.main
-```
-**Features:**
-- Large language model inference (Llama 3.1 8B)
-- Token verification and resampling
-- Session management
-- Supports dense and sparse probability distributions
+cd llm_service
+python -m server.main
 
-**Configuration:** Edit `llm_service/server/main.py` to change model ID or port.
+# Edit `llm_service/server/main.py` to change model ID or port.
+```
+
 
 ### 2. ILM Service
 ```
+cd ilm_service
 # without latency simulation
-python -m ilm_service.server.main
+python -m server.main
 
 # with latency simulation (10ms edge + 50ms datacenter)
-python -m ilm_service.server.main --latency
+python -m server.main --latency
 ```
 **Features:**
 - Intermediate model inference (Llama 3.2 3B)
@@ -74,7 +74,7 @@ python -m slm_service.main --latency --use-chat-template
 
 ## Install dependencies
 ```
-# 
+# optionally set up a virtual environment at root
 pip install -r llm_service/requirements.txt
 pip install -r ilm_service/requirements.txt
 pip install -r slm_service/requirements.txt
