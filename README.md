@@ -10,10 +10,9 @@ ALl of this is set up to run on a Single A100 (shown by the hardcoded IP address
 ```
 cd llm_service
 python -m server.main
-
-# Edit `llm_service/server/main.py` to change model ID or port.
 ```
 
+**Configuration:** Edit `llm_service/server/main.py`  to change model ID or port.
 
 ### 2. ILM Service
 ```
